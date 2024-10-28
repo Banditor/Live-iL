@@ -6,7 +6,7 @@
             "image": "kan.jpg",
             "channelID": "11",
             "module": "kan",
-            "streamUrl": "https://stream.example.com/kan_stream"
+            "streamUrl": "https://www.kan.org.il/live/kan"
         },
         {
             "name": "ch_11c",
@@ -14,7 +14,7 @@
             "image": "kan.jpg",
             "channelID": "11c",
             "module": "kan",
-            "streamUrl": "https://stream.example.com/kan_stream"
+            "streamUrl": "https://www.kan.org.il/live/kan"
         },
         {
             "name": "ch_12",
@@ -22,7 +22,7 @@
             "image": "keshet.jpg",
             "channelID": "12",
             "module": "keshet",
-            "streamUrl": "https://stream.example.com/keshet_stream"
+            "streamUrl": "https://www.mako.co.il/live/keshet"
         },
         {
             "name": "ch_12b",
@@ -30,7 +30,7 @@
             "image": "keshet.jpg",
             "channelID": "12b",
             "module": "keshet",
-            "streamUrl": "https://stream.example.com/keshet_stream"
+            "streamUrl": "https://www.mako.co.il/live/keshet"
         },
         {
             "name": "ch_12c",
@@ -38,7 +38,7 @@
             "image": "keshet.jpg",
             "channelID": "12c",
             "module": "keshet",
-            "streamUrl": "https://stream.example.com/keshet_stream"
+            "streamUrl": "https://www.mako.co.il/live/keshet"
         },
         {
             "name": "ch_13",
@@ -46,7 +46,7 @@
             "image": "13.jpg",
             "channelID": "13",
             "module": "reshet",
-            "streamUrl": "https://stream.example.com/reshet_stream"
+            "streamUrl": "https://13tv.co.il/live/reshet"
         },
         {
             "name": "ch_13c",
@@ -54,7 +54,15 @@
             "image": "13.jpg",
             "channelID": "13c",
             "module": "reshet",
-            "streamUrl": "https://stream.example.com/reshet_stream"
+            "streamUrl": "https://13tv.co.il/live/reshet"
+        },
+        {
+            "name": "ch_14",
+            "nameID": "30606",
+            "image": "14tv.png",
+            "channelID": "14",
+            "module": "14tv",
+            "streamUrl": "https://www.now14.co.il/live/14tv"
         },
         {
             "name": "ch_23",
@@ -62,7 +70,7 @@
             "image": "23tv.jpg",
             "channelID": "23",
             "module": "kan",
-            "streamUrl": "https://stream.example.com/kan_stream"
+            "streamUrl": "https://www.kan.org.il/live/kan"
         },
         {
             "name": "ch_24",
@@ -70,7 +78,7 @@
             "image": "24telad.png",
             "channelID": "24",
             "module": "keshet",
-            "streamUrl": "https://stream.example.com/keshet_stream"
+            "streamUrl": "https://www.mako.co.il/live/keshet"
         },
         {
             "name": "ch_bb",
@@ -78,7 +86,7 @@
             "image": "bb.jpg",
             "channelID": "bb",
             "module": "reshet",
-            "streamUrl": "https://stream.example.com/reshet_stream"
+            "streamUrl": "https://13tv.co.il/live/reshet"
         },
         {
             "name": "ch_33",
@@ -86,15 +94,15 @@
             "image": "makan.png",
             "channelID": "33",
             "module": "kan",
-            "streamUrl": "https://stream.example.com/kan_stream"
+            "streamUrl": "https://www.kan.org.il/live/kan"
         },
         {
-            "name": "ch_sport5",
-            "nameID": "30632",
-            "image": "Sport5.png",
-            "channelID": "5studio",
-            "module": "sport5",
-            "streamUrl": "https://stream.example.com/sport5_stream"
+            "name": "ch_walla",
+            "nameID": "30624",
+            "image": "walla.png",
+            "channelID": "live",
+            "module": "walla",
+            "streamUrl": "https://www.walla.co.il/live/walla"
         },
         {
             "name": "rd_88",
@@ -102,7 +110,7 @@
             "image": "88.png",
             "channelID": "88",
             "module": "kan",
-            "streamUrl": "https://stream.example.com/kan_stream"
+            "streamUrl": "https://www.kan.org.il/live/kan"
         },
         {
             "name": "rd_bet",
@@ -110,7 +118,7 @@
             "image": "bet.png",
             "channelID": "bet",
             "module": "kan",
-            "streamUrl": "https://stream.example.com/kan_stream"
+            "streamUrl": "https://www.kan.org.il/live/kan"
         },
         {
             "name": "rd_gimel",
@@ -118,7 +126,7 @@
             "image": "gimel.png",
             "channelID": "gimel",
             "module": "kan",
-            "streamUrl": "https://stream.example.com/kan_stream"
+            "streamUrl": "https://www.kan.org.il/live/kan"
         },
         {
             "name": "rd_culture",
@@ -126,7 +134,7 @@
             "image": "culture.png",
             "channelID": "culture",
             "module": "kan",
-            "streamUrl": "https://stream.example.com/kan_stream"
+            "streamUrl": "https://www.kan.org.il/live/kan"
         },
         {
             "name": "rd_music",
@@ -134,7 +142,7 @@
             "image": "music.png",
             "channelID": "music",
             "module": "kan",
-            "streamUrl": "https://stream.example.com/kan_stream"
+            "streamUrl": "https://www.kan.org.il/live/kan"
         },
         {
             "name": "rd_moreshet",
@@ -142,7 +150,7 @@
             "image": "moreshet.png",
             "channelID": "moreshet",
             "module": "kan",
-            "streamUrl": "https://stream.example.com/kan_stream"
+            "streamUrl": "https://www.kan.org.il/live/kan"
         },
         {
             "name": "rd_kankids",
@@ -150,15 +158,7 @@
             "image": "23tv.jpg",
             "channelID": "kankids",
             "module": "kan",
-            "streamUrl": "https://stream.example.com/kan_stream"
-        },
-        {
-            "name": "rd_sport5",
-            "nameID": "30632",
-            "image": "Sport5.png",
-            "channelID": "5live",
-            "module": "sport5",
-            "streamUrl": "https://stream.example.com/sport5_stream"
+            "streamUrl": "https://www.kan.org.il/live/kan"
         },
         {
             "name": "rd_reka",
@@ -166,7 +166,15 @@
             "image": "reka.png",
             "channelID": "reka",
             "module": "kan",
-            "streamUrl": "https://stream.example.com/kan_stream"
+            "streamUrl": "https://www.kan.org.il/live/kan"
+        },
+        {
+            "name": "rd_1064",
+            "nameID": "30737",
+            "image": "1064fm.jpg",
+            "channelID": "1064fm",
+            "module": "1064fm",
+            "streamUrl": "https://radio1064.co.il/live/1064fm"
         },
         {
             "name": "rd_makan",
@@ -174,7 +182,7 @@
             "image": "makan.png",
             "channelID": "makan",
             "module": "kan",
-            "streamUrl": "https://stream.example.com/kan_stream"
+            "streamUrl": "https://www.kan.org.il/live/kan"
         }
     ]
 }

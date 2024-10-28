@@ -26,7 +26,7 @@
             "ch": "ch_13",
             "nameID": "Reshet 13",
             "channelID": "13",
-            "mode": 10,
+            "mode": 4,
             "image": "13.jpg",
             "module": "reshet",
             "sources": [
@@ -111,6 +111,28 @@
             "sources": [
                 "http://eco99fm.streamgates.net/eco99fm"
             ]
+        },
+        {
+            "ch": "rd_90fm",
+            "nameID": "90FM",
+            "channelID": "90fm",
+            "mode": 11,
+            "image": "90fm.jpg",
+            "module": "radio",
+            "sources": [
+                "http://90fm.co.il/live"
+            ]
+        },
+        {
+            "ch": "rd_102fm",
+            "nameID": "102FM",
+            "channelID": "102fm",
+            "mode": 11,
+            "image": "102fm.jpg",
+            "module": "102fm",
+            "sources": [
+                "http://102fm.co.il/live"
+            ]
         }
     ],
     "Categories": {
@@ -126,7 +148,9 @@
             "rd_glz",
             "rd_glglz",
             "rd_100fm",
-            "rd_eco99"
+            "rd_eco99",
+            "rd_90fm",
+            "rd_102fm"
         ]
     }
 }

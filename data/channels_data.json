@@ -8,7 +8,7 @@
             "image": "kan.jpg",
             "module": "kan",
             "sources": [
-                "https://example.com/streams/kan11/stream1.m3u8"
+                "https://kan.org.il/live"
             ]
         },
         {
@@ -19,7 +19,7 @@
             "image": "keshet.jpg",
             "module": "keshet",
             "sources": [
-                "https://example.com/streams/keshet12/stream1.m3u8"
+                "https://www.mako.co.il/live"
             ]
         },
         {
@@ -30,7 +30,7 @@
             "image": "13.jpg",
             "module": "reshet",
             "sources": [
-                "https://example.com/streams/reshet13/stream1.m3u8"
+                "https://reshet.tv/live"
             ]
         },
         {
@@ -41,7 +41,7 @@
             "image": "14tv.png",
             "module": "14tv",
             "sources": [
-                "https://example.com/streams/14tv/stream1.m3u8"
+                "https://14tv.co.il/live"
             ]
         },
         {
@@ -52,7 +52,7 @@
             "image": "21.jpg",
             "module": "21tv",
             "sources": [
-                "https://example.com/streams/21tv/stream1.m3u8"
+                "https://21tv.co.il/live"
             ]
         },
         {
@@ -63,7 +63,7 @@
             "image": "23tv.jpg",
             "module": "kan23",
             "sources": [
-                "https://example.com/streams/kan23/stream1.m3u8"
+                "https://23tv.co.il/live"
             ]
         }
     ],
@@ -76,7 +76,29 @@
             "image": "glz.jpg",
             "module": "glz",
             "sources": [
-                "https://example.com/streams/glz/stream1.m3u8"
+                "http://glzwizzlv.bynetcdn.com/glz_mp3"
+            ]
+        },
+        {
+            "ch": "rd_glglz",
+            "nameID": "Galgalatz",
+            "channelID": "glglz",
+            "mode": 11,
+            "image": "galgalatz.jpg",
+            "module": "radio",
+            "sources": [
+                "http://glzwizzlv.bynetcdn.com/glglz_mp3"
+            ]
+        },
+        {
+            "ch": "rd_100fm",
+            "nameID": "100FM",
+            "channelID": "100fm",
+            "mode": 11,
+            "image": "100fm.jpg",
+            "module": "100fm",
+            "sources": [
+                "https://cdn.cybercdn.live/Radios_100FM/Audio/icecast.audio"
             ]
         },
         {
@@ -87,29 +109,7 @@
             "image": "eco99.jpg",
             "module": "radio",
             "sources": [
-                "https://example.com/streams/eco99/stream1.m3u8"
-            ]
-        },
-        {
-            "ch": "rd_100",
-            "nameID": "100FM",
-            "channelID": "100fm",
-            "mode": 11,
-            "image": "100fm.jpg",
-            "module": "100fm",
-            "sources": [
-                "https://example.com/streams/100fm/stream1.m3u8"
-            ]
-        },
-        {
-            "ch": "rd_102",
-            "nameID": "102FM",
-            "channelID": "102fm",
-            "mode": 11,
-            "image": "102fm.jpg",
-            "module": "102fm",
-            "sources": [
-                "https://example.com/streams/102fm/stream1.m3u8"
+                "http://eco99fm.streamgates.net/eco99fm"
             ]
         }
     ],
@@ -124,9 +124,9 @@
         ],
         "radio": [
             "rd_glz",
-            "rd_eco99",
-            "rd_100",
-            "rd_102"
+            "rd_glglz",
+            "rd_100fm",
+            "rd_eco99"
         ]
     }
 }

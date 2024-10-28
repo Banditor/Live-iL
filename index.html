@@ -94,7 +94,7 @@
         let favorites = []; 
 
         function loadChannels() {
-            fetch('data/full_channels_data_v3.json')
+            fetch('data/comprehensive_channels_data.json')
                 .then(response => response.json())
                 .then(data => {
                     console.log('Loaded JSON data:', data); // Debugging output

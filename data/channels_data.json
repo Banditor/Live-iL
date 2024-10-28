@@ -65,6 +65,61 @@
             "sources": [
                 "https://23tv.co.il/live"
             ]
+        },
+        {
+            "ch": "ch_33",
+            "nameID": "Kan 33",
+            "channelID": "33",
+            "mode": 10,
+            "image": "kan33.jpg",
+            "module": "kan33",
+            "sources": [
+                "https://kan.org.il/kan33"
+            ]
+        },
+        {
+            "ch": "ch_4k",
+            "nameID": "Kan 4K",
+            "channelID": "4k",
+            "mode": 10,
+            "image": "kan4k.jpg",
+            "module": "kan4k",
+            "sources": [
+                "https://kan.org.il/4k"
+            ]
+        },
+        {
+            "ch": "ch_y24",
+            "nameID": "Ynet Live",
+            "channelID": "y24",
+            "mode": 10,
+            "image": "ynet.jpg",
+            "module": "ynet",
+            "sources": [
+                "https://ynet.co.il/live"
+            ]
+        },
+        {
+            "ch": "ch_bblive",
+            "nameID": "Big Brother Live",
+            "channelID": "bblive",
+            "mode": 10,
+            "image": "bigbrother.jpg",
+            "module": "bigbrother",
+            "sources": [
+                "https://bigbrother.live/stream"
+            ]
+        },
+        {
+            "ch": "ch_i24",
+            "nameID": "i24News",
+            "channelID": "i24",
+            "mode": 10,
+            "image": "i24news.jpg",
+            "module": "i24",
+            "sources": [
+                "https://i24news.tv/live"
+            ]
         }
     ],
     "RadioChannels": [
@@ -142,7 +197,12 @@
             "ch_13",
             "ch_14",
             "ch_21",
-            "ch_23"
+            "ch_23",
+            "ch_33",
+            "ch_4k",
+            "ch_y24",
+            "ch_bblive",
+            "ch_i24"
         ],
         "radio": [
             "rd_glz",

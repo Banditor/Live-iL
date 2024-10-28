@@ -90,6 +90,7 @@
                             </div>
                             <div class="actions">
                                 <button onclick="watchChannel('${channel.channelID}')">Watch</button>
+                                <button onclick="manageSources('${channel.channelID}')">Manage Sources</button>
                             </div>
                         `;
                         categoryDiv.appendChild(channelDiv);
@@ -100,28 +101,68 @@
         }
 
         function refreshChannels() {
-            // Placeholder for refreshing functionality
-            alert('Refreshing channels... (This will be replaced with actual functionality)');
-            loadChannels();
+            loadChannels(); // Reload the channels from the JSON file
         }
 
         function watchChannel(channelID) {
-            // Placeholder for watch channel functionality
-            
-                 // Assuming each channel has a stream URL stored in the JSON (mock implementation)
-                 const channel = data.TvChannels.concat(data.RadioChannels).find(ch => ch.channelID === channelID);
-                 if (channel && channel.sources && channel.sources.length > 0) {
-                     const videoUrl = channel.sources[0]; // Use the first available source for now
-                     const videoElement = document.createElement('video');
-                     videoElement.src = videoUrl;
-                     videoElement.controls = true;
-                     videoElement.autoplay = true;
-                     document.body.innerHTML = ''; // Clear the page
-                     document.body.appendChild(videoElement); // Display the video
-                 } else {
-                     alert('No available streams for this channel.');
-                 }
-                 
+            const channel = channelsData.TvChannels.concat(channelsData.RadioChannels).find(ch => ch.channelID === channelID);
+            if (channel && channel.sources && channel.sources.length > 0) {
+                let selectedSource = channel.sources[0]; // Default to the first source
+
+                // Check if the user wants to select a source manually
+                if (confirm("Would you like to select a source manually?")) {
+                    let sourceOptions = channel.sources.map((src, index) => `${index + 1}: ${src}`).join("\n");
+                    let selectedIndex = prompt("Select a source:\n" + sourceOptions);
+
+                    if (selectedIndex && !isNaN(selectedIndex)) {
+                        selectedSource = channel.sources[selectedIndex - 1] || selectedSource;
+                    }
+                }
+
+                const videoElement = document.createElement('video');
+                videoElement.src = selectedSource;
+                videoElement.controls = true;
+                videoElement.autoplay = true;
+                document.body.innerHTML = ''; // Clear the page
+                document.body.appendChild(videoElement); // Display the video
+
+                videoElement.onerror = () => {
+                    alert("Error loading video. Trying next source...");
+                    const nextSource = channel.sources[1]; // As an example, try the next source
+                    if (nextSource) {
+                        videoElement.src = nextSource;
+                    } else {
+                        alert("No more sources available.");
+                    }
+                };
+            } else {
+                alert('No available streams for this channel.');
+            }
+        }
+
+        function manageSources(channelID) {
+            const password = prompt("Enter the password to manage sources:");
+            if (password !== "12345677") {
+                alert("Incorrect password.");
+                return;
+            }
+
+            const action = prompt("Type 'add' to add a source or 'remove' to remove a source:");
+            if (action === "add") {
+                const newSource = prompt("Enter the new source URL:");
+                if (newSource) {
+                    alert("Source added: " + newSource); // Placeholder for actual functionality
+                    // Code to add source to JSON should be implemented here
+                }
+            } else if (action === "remove") {
+                const removeIndex = prompt("Enter the index of the source to remove:");
+                if (removeIndex && !isNaN(removeIndex)) {
+                    alert("Source removed."); // Placeholder for actual functionality
+                    // Code to remove source from JSON should be implemented here
+                }
+            } else {
+                alert("Invalid action.");
+            }
         }
 
         // Load channels when the page loads

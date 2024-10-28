@@ -80,6 +80,7 @@
     <div class="container">
         <div class="header">
             <h1>Live iL - TV and Radio Streaming</h1>
+            <button onclick="refreshChannels()">Refresh Channels</button>
         </div>
         <div class="categories">
             <button onclick="showCategory('tv')">TV Channels</button>
@@ -100,6 +101,10 @@
                     showCategory('tv');
                 })
                 .catch(error => console.error('Error loading channels:', error));
+        }
+
+        function refreshChannels() {
+            loadChannels(); // Reload the channels from the JSON file
         }
 
         function showCategory(category) {
@@ -166,6 +171,7 @@
                 <div class="container">
                     <div class="header">
                         <h1>Live iL - TV and Radio Streaming</h1>
+                        <button onclick="refreshChannels()">Refresh Channels</button>
                     </div>
                     <div class="categories">
                         <button onclick="showCategory('tv')">TV Channels</button>

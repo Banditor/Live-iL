@@ -1,1 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idan Plus Live TV</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #1a1a1a;
+            color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            color: #4CAF50;
+        }
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            margin-top: 30px;
+            background-color: #2e2e2e;
+            border-radius: 8px;
+            overflow: hidden;
+            padding: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 15px;
+            text-align: center;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #3e3e3e;
+        }
+        tr:hover {
+            background-color: #5a5a5a;
+        }
+        .channel-logo {
+            width: 80px;
+            height: auto;
+            border-radius: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Idan Plus Live Channels</h1>
+        <table id="channels-table">
+            <thead>
+                <tr>
+                    <th>Logo</th>
+                    <th>Channel Name</th>
+                    <th>Watch</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
 
+    <script>
+        async function loadChannels() {
+            try {
+                // Fetch the channels data from the JSON file
+                const response = await fetch('https://banditor.github.io/Live-iL/data/full_channels_data.json');
+                const data = await response.json(); 
+                
+                const channels = data.TvChannels;
+                const tableBody = document.querySelector('#channels-table tbody');
+                
+                channels.forEach(channel => {
+                    const row = document.createElement('tr');
+                    
+                    // Logo cell
+                    const logoCell = document.createElement('td');
+                    const logoImg = document.createElement('img');
+                    logoImg.src = `https://banditor.github.io/Live-iL/${channel.image}`;
+                    logoImg.alt = `${channel.name} logo`;
+                    logoImg.classList.add('channel-logo');
+                    logoCell.appendChild(logoImg);
+                    row.appendChild(logoCell);
+                    
+                    // Channel name cell
+                    const nameCell = document.createElement('td');
+                    nameCell.textContent = channel.name;
+                    row.appendChild(nameCell);
+                    
+                    // Watch button cell
+                    const watchCell = document.createElement('td');
+                    const watchButton = document.createElement('button');
+                    watchButton.textContent = 'Watch';
+                    watchButton.onclick = () => {
+                        window.open(channel.streamUrl, '_blank');
+                    };
+                    watchCell.appendChild(watchButton);
+                    row.appendChild(watchCell);
+                    
+                    tableBody.appendChild(row);
+                });
+            } catch (error) {
+                console.error('Error loading channels:', error);
+            }
+        }
+
+        // Call the function to load channels when the page loads
+        loadChannels();
+    </script>
+</body>
+</html>

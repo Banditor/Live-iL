@@ -57,13 +57,14 @@
         <div id="categories"></div>
     </div>
     <script>
-        const channelsData = {}; // Placeholder for the channels JSON data
+        let channelsData = {}; // Placeholder for the channels JSON data
+        let favorites = []; // Array to store favorite channels
 
         function loadChannels() {
-            // Fetch the JSON data (this will be replaced with actual dynamic loading in a real environment)
             fetch('data/channels_data.json')
                 .then(response => response.json())
                 .then(data => {
+                    channelsData = data;
                     displayChannels(data);
                 })
                 .catch(error => console.error('Error loading channels:', error));
@@ -91,6 +92,7 @@
                             <div class="actions">
                                 <button onclick="watchChannel('${channel.channelID}')">Watch</button>
                                 <button onclick="manageSources('${channel.channelID}')">Manage Sources</button>
+                                <button onclick="toggleFavorite('${channel.channelID}')">Favorite</button>
                             </div>
                         `;
                         categoryDiv.appendChild(channelDiv);
@@ -109,7 +111,6 @@
             if (channel && channel.sources && channel.sources.length > 0) {
                 let selectedSource = channel.sources[0]; // Default to the first source
 
-                // Check if the user wants to select a source manually
                 if (confirm("Would you like to select a source manually?")) {
                     let sourceOptions = channel.sources.map((src, index) => `${index + 1}: ${src}`).join("\n");
                     let selectedIndex = prompt("Select a source:\n" + sourceOptions);
@@ -141,27 +142,33 @@
         }
 
         function manageSources(channelID) {
-            const password = prompt("Enter the password to manage sources:");
-            if (password !== "12345677") {
-                alert("Incorrect password.");
-                return;
-            }
+            const channel = channelsData.TvChannels.concat(channelsData.RadioChannels).find(ch => ch.channelID === channelID);
+            if (!channel) return;
 
-            const action = prompt("Type 'add' to add a source or 'remove' to remove a source:");
-            if (action === "add") {
+            const action = prompt("Choose action: 1) Add source 2) Remove source");
+            if (action === '1') {
                 const newSource = prompt("Enter the new source URL:");
                 if (newSource) {
-                    alert("Source added: " + newSource); // Placeholder for actual functionality
-                    // Code to add source to JSON should be implemented here
+                    channel.sources.push(newSource);
+                    alert("Source added successfully.");
                 }
-            } else if (action === "remove") {
-                const removeIndex = prompt("Enter the index of the source to remove:");
+            } else if (action === '2') {
+                const sourceOptions = channel.sources.map((src, index) => `${index + 1}: ${src}`).join("\n");
+                const removeIndex = prompt("Select a source to remove:\n" + sourceOptions);
                 if (removeIndex && !isNaN(removeIndex)) {
-                    alert("Source removed."); // Placeholder for actual functionality
-                    // Code to remove source from JSON should be implemented here
+                    channel.sources.splice(removeIndex - 1, 1);
+                    alert("Source removed successfully.");
                 }
+            }
+        }
+
+        function toggleFavorite(channelID) {
+            if (favorites.includes(channelID)) {
+                favorites = favorites.filter(id => id !== channelID);
+                alert("Channel removed from favorites.");
             } else {
-                alert("Invalid action.");
+                favorites.push(channelID);
+                alert("Channel added to favorites.");
             }
         }
 

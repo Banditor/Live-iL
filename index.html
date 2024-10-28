@@ -8,7 +8,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
+            background-color: #f9f9f9;
             color: #333;
             margin: 0;
             padding: 0;
@@ -21,19 +21,42 @@
         .header {
             text-align: center;
             margin-bottom: 20px;
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
         }
-        .category {
+        .categories {
+            display: flex;
+            justify-content: center;
             margin-bottom: 20px;
+        }
+        .categories button {
+            margin: 0 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        .category-content {
+            display: none;
         }
         .channel {
             display: flex;
             align-items: center;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
         }
         .channel img {
-            width: 50px;
-            height: 50px;
-            margin-right: 10px;
+            width: 60px;
+            height: 60px;
+            margin-right: 15px;
+            border-radius: 5px;
+            object-fit: cover;
         }
         .channel-info {
             flex-grow: 1;
@@ -45,6 +68,10 @@
         button {
             padding: 5px 10px;
             cursor: pointer;
+            background-color: #28a745;
+            border: none;
+            color: white;
+            border-radius: 3px;
         }
     </style>
 </head>
@@ -52,9 +79,13 @@
     <div class="container">
         <div class="header">
             <h1>Live iL - TV and Radio Streaming</h1>
-            <button onclick="refreshChannels()">Refresh Channels</button>
         </div>
-        <div id="categories"></div>
+        <div class="categories">
+            <button onclick="showCategory('tv')">TV Channels</button>
+            <button onclick="showCategory('radio')">Radio Stations</button>
+            <button onclick="showFavorites()">Favorites</button>
+        </div>
+        <div id="categories-content"></div>
     </div>
     <script>
         let channelsData = {}; // Placeholder for the channels JSON data
@@ -65,45 +96,64 @@
                 .then(response => response.json())
                 .then(data => {
                     channelsData = data;
-                    displayChannels(data);
+                    displayCategory('tv'); // Show TV channels by default
                 })
                 .catch(error => console.error('Error loading channels:', error));
         }
 
-        function displayChannels(data) {
-            const categoriesDiv = document.getElementById('categories');
-            categoriesDiv.innerHTML = '';
+        function displayCategory(category) {
+            const contentDiv = document.getElementById('categories-content');
+            contentDiv.innerHTML = '';
 
-            for (const category in data.Categories) {
-                const categoryDiv = document.createElement('div');
-                categoryDiv.className = 'category';
-                categoryDiv.innerHTML = `<h2>${category.toUpperCase()}</h2>`;
-
-                data.Categories[category].forEach(channelID => {
-                    const channel = data.TvChannels.concat(data.RadioChannels).find(ch => ch.ch === channelID);
-                    if (channel) {
-                        const channelDiv = document.createElement('div');
-                        channelDiv.className = 'channel';
-                        channelDiv.innerHTML = `
-                            <img src="images/${channel.image}" alt="${channel.nameID}">
-                            <div class="channel-info">
-                                <h3>${channel.nameID}</h3>
-                            </div>
-                            <div class="actions">
-                                <button onclick="watchChannel('${channel.channelID}')">Watch</button>
-                                <button onclick="manageSources('${channel.channelID}')">Manage Sources</button>
-                                <button onclick="toggleFavorite('${channel.channelID}')">Favorite</button>
-                            </div>
-                        `;
-                        categoryDiv.appendChild(channelDiv);
-                    }
-                });
-                categoriesDiv.appendChild(categoryDiv);
-            }
+            channelsData.Categories[category].forEach(channelID => {
+                const channel = channelsData.TvChannels.concat(channelsData.RadioChannels).find(ch => ch.ch === channelID);
+                if (channel) {
+                    const channelDiv = document.createElement('div');
+                    channelDiv.className = 'channel';
+                    channelDiv.innerHTML = `
+                        <img src="images/${channel.image}" alt="${channel.nameID}">
+                        <div class="channel-info">
+                            <h3>${channel.nameID}</h3>
+                        </div>
+                        <div class="actions">
+                            <button onclick="watchChannel('${channel.channelID}')">Watch</button>
+                            <button onclick="manageSources('${channel.channelID}')">Manage Sources</button>
+                            <button onclick="toggleFavorite('${channel.channelID}')">${favorites.includes(channel.channelID) ? 'Unfavorite' : 'Favorite'}</button>
+                        </div>
+                    `;
+                    contentDiv.appendChild(channelDiv);
+                }
+            });
+            contentDiv.style.display = 'block';
         }
 
-        function refreshChannels() {
-            loadChannels(); // Reload the channels from the JSON file
+        function showCategory(category) {
+            displayCategory(category);
+        }
+
+        function showFavorites() {
+            const contentDiv = document.getElementById('categories-content');
+            contentDiv.innerHTML = '';
+
+            favorites.forEach(channelID => {
+                const channel = channelsData.TvChannels.concat(channelsData.RadioChannels).find(ch => ch.channelID === channelID);
+                if (channel) {
+                    const channelDiv = document.createElement('div');
+                    channelDiv.className = 'channel';
+                    channelDiv.innerHTML = `
+                        <img src="images/${channel.image}" alt="${channel.nameID}">
+                        <div class="channel-info">
+                            <h3>${channel.nameID}</h3>
+                        </div>
+                        <div class="actions">
+                            <button onclick="watchChannel('${channel.channelID}')">Watch</button>
+                            <button onclick="manageSources('${channel.channelID}')">Manage Sources</button>
+                            <button onclick="toggleFavorite('${channel.channelID}')">${favorites.includes(channel.channelID) ? 'Unfavorite' : 'Favorite'}</button>
+                        </div>
+                    `;
+                    contentDiv.appendChild(channelDiv);
+                }
+            });
         }
 
         function watchChannel(channelID) {
@@ -165,11 +215,10 @@
         function toggleFavorite(channelID) {
             if (favorites.includes(channelID)) {
                 favorites = favorites.filter(id => id !== channelID);
-                alert("Channel removed from favorites.");
             } else {
                 favorites.push(channelID);
-                alert("Channel added to favorites.");
             }
+            showFavorites(); // Update favorites view
         }
 
         // Load channels when the page loads

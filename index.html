@@ -1,1 +1,117 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live iL - TV and Radio Streaming</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .category {
+            margin-bottom: 20px;
+        }
+        .channel {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .channel img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+        .channel-info {
+            flex-grow: 1;
+        }
+        .actions {
+            display: flex;
+            gap: 10px;
+        }
+        button {
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Live iL - TV and Radio Streaming</h1>
+            <button onclick="refreshChannels()">Refresh Channels</button>
+        </div>
+        <div id="categories"></div>
+    </div>
+    <script>
+        const channelsData = {}; // Placeholder for the channels JSON data
+
+        function loadChannels() {
+            // Fetch the JSON data (this will be replaced with actual dynamic loading in a real environment)
+            fetch('idanplus_channels.json')
+                .then(response => response.json())
+                .then(data => {
+                    displayChannels(data);
+                })
+                .catch(error => console.error('Error loading channels:', error));
+        }
+
+        function displayChannels(data) {
+            const categoriesDiv = document.getElementById('categories');
+            categoriesDiv.innerHTML = '';
+
+            for (const category in data.Categories) {
+                const categoryDiv = document.createElement('div');
+                categoryDiv.className = 'category';
+                categoryDiv.innerHTML = `<h2>${category.toUpperCase()}</h2>`;
+
+                data.Categories[category].forEach(channelID => {
+                    const channel = data.TvChannels.concat(data.RadioChannels).find(ch => ch.ch === channelID);
+                    if (channel) {
+                        const channelDiv = document.createElement('div');
+                        channelDiv.className = 'channel';
+                        channelDiv.innerHTML = `
+                            <img src="resources/images/${channel.image}" alt="${channel.nameID}">
+                            <div class="channel-info">
+                                <h3>${channel.nameID}</h3>
+                            </div>
+                            <div class="actions">
+                                <button onclick="watchChannel('${channel.channelID}')">Watch</button>
+                            </div>
+                        `;
+                        categoryDiv.appendChild(channelDiv);
+                    }
+                });
+                categoriesDiv.appendChild(categoryDiv);
+            }
+        }
+
+        function refreshChannels() {
+            // Placeholder for refreshing functionality
+            alert('Refreshing channels... (This will be replaced with actual functionality)');
+            loadChannels();
+        }
+
+        function watchChannel(channelID) {
+            // Placeholder for watch channel functionality
+            alert(`Watching channel: ${channelID} (This will be replaced with actual functionality)`);
+        }
+
+        // Load channels when the page loads
+        window.onload = loadChannels;
+    </script>
+</body>
+</html>

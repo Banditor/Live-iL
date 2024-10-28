@@ -143,6 +143,7 @@
                     <h3>${channelName}</h3>
                     <select id="source-select">${options}</select>
                     <button onclick="startPlayback('${channelID}')">Play</button>
+                    <button onclick="backToMenu()">Back</button>
                     <video id="video-player" controls autoplay style="width: 100%; margin-top: 20px;"></video>
                 `;
                 document.body.innerHTML = ''; 
@@ -159,6 +160,24 @@
             videoPlayer.src = selectedSource;
         }
 
+        function backToMenu() {
+            // Reload the main page content when the user clicks "Back"
+            document.body.innerHTML = `
+                <div class="container">
+                    <div class="header">
+                        <h1>Live iL - TV and Radio Streaming</h1>
+                    </div>
+                    <div class="categories">
+                        <button onclick="showCategory('tv')">TV Channels</button>
+                        <button onclick="showCategory('radio')">Radio Stations</button>
+                        <button onclick="showCategory('favorites')">Favorites</button>
+                    </div>
+                    <div id="channel-list" class="channel-list"></div>
+                </div>
+            `;
+            loadChannels(); // Reload the channels
+        }
+
         function manageSources(channelID) {
             const channel = channelsData.TvChannels.concat(channelsData.RadioChannels).find(ch => ch.channelID === channelID);
             if (!channel) return;
@@ -168,6 +187,7 @@
                 <h3>Manage Sources for ${channel.nameID}</h3>
                 ${channel.sources.map((src, index) => `<div>${index + 1}: ${src}</div>`).join('')}
                 <button onclick="addSource('${channel.channelID}')">Add Source</button>
+                <button onclick="backToMenu()">Back</button>
             `;
             document.body.innerHTML = ''; 
             document.body.appendChild(sourcesList);

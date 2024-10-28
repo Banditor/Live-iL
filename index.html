@@ -8,7 +8,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
+            background-color: #f4f4f4;
             color: #333;
             margin: 0;
             padding: 0;
@@ -20,20 +20,44 @@
         }
         .header {
             text-align: center;
-            margin-bottom: 20px;
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
         }
-        .category {
-            margin-bottom: 20px;
+        .categories {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .categories button {
+            margin: 0 10px;
+            padding: 10px 20px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        .channel-list {
+            display: none;
+            margin-top: 20px;
         }
         .channel {
             display: flex;
             align-items: center;
-            margin-bottom: 10px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            padding: 10px;
         }
         .channel img {
-            width: 50px;
-            height: 50px;
-            margin-right: 10px;
+            width: 60px;
+            height: 60px;
+            margin-right: 15px;
+            border-radius: 5px;
+            object-fit: cover;
         }
         .channel-info {
             flex-grow: 1;
@@ -45,6 +69,10 @@
         button {
             padding: 5px 10px;
             cursor: pointer;
+            background-color: #007bff;
+            border: none;
+            color: white;
+            border-radius: 3px;
         }
     </style>
 </head>
@@ -52,92 +80,74 @@
     <div class="container">
         <div class="header">
             <h1>Live iL - TV and Radio Streaming</h1>
-            <button onclick="refreshChannels()">Refresh Channels</button>
         </div>
-        <div id="categories"></div>
+        <div class="categories">
+            <button onclick="showCategory('tv')">TV Channels</button>
+            <button onclick="showCategory('radio')">Radio Stations</button>
+            <button onclick="showCategory('favorites')">Favorites</button>
+        </div>
+        <div id="channel-list" class="channel-list"></div>
     </div>
     <script>
-        let channelsData = {}; // Placeholder for the channels JSON data
-        let favorites = []; // Array to store favorite channels
+        let channelsData = {}; 
+        let favorites = []; 
 
         function loadChannels() {
             fetch('data/channels_data.json')
                 .then(response => response.json())
                 .then(data => {
                     channelsData = data;
-                    displayChannels(data);
+                    showCategory('tv');
                 })
                 .catch(error => console.error('Error loading channels:', error));
         }
 
-        function displayChannels(data) {
-            const categoriesDiv = document.getElementById('categories');
-            categoriesDiv.innerHTML = '';
+        function showCategory(category) {
+            const channelList = document.getElementById('channel-list');
+            channelList.innerHTML = '';
 
-            for (const category in data.Categories) {
-                const categoryDiv = document.createElement('div');
-                categoryDiv.className = 'category';
-                categoryDiv.innerHTML = `<h2>${category.toUpperCase()}</h2>`;
-
-                data.Categories[category].forEach(channelID => {
-                    const channel = data.TvChannels.concat(data.RadioChannels).find(ch => ch.ch === channelID);
-                    if (channel) {
-                        const channelDiv = document.createElement('div');
-                        channelDiv.className = 'channel';
-                        channelDiv.innerHTML = `
-                            <img src="Live-iL-main/images/${channel.image}" alt="${channel.nameID}">
-                            <div class="channel-info">
-                                <h3>${channel.nameID}</h3>
-                            </div>
-                            <div class="actions">
-                                <button onclick="watchChannel('${channel.channelID}')">Watch</button>
-                                <button onclick="manageSources('${channel.channelID}')">Manage Sources</button>
-                                <button onclick="toggleFavorite('${channel.channelID}')">Favorite</button>
-                            </div>
-                        `;
-                        categoryDiv.appendChild(channelDiv);
-                    }
-                });
-                categoriesDiv.appendChild(categoryDiv);
-            }
-        }
-
-        function refreshChannels() {
-            loadChannels(); // Reload the channels from the JSON file
-        }
-
-        function watchChannel(channelID) {
-            const channel = channelsData.TvChannels.concat(channelsData.RadioChannels).find(ch => ch.channelID === channelID);
-            if (channel && channel.sources && channel.sources.length > 0) {
-                let selectedSource = channel.sources[0]; // Default to the first source
-
-                if (confirm("Would you like to select a source manually?")) {
-                    let sourceOptions = channel.sources.map((src, index) => `${index + 1}: ${src}`).join("\n");
-                    let selectedIndex = prompt("Select a source:\n" + sourceOptions);
-
-                    if (selectedIndex && !isNaN(selectedIndex)) {
-                        selectedSource = channel.sources[selectedIndex - 1] || selectedSource;
-                    }
-                }
-
-                const videoElement = document.createElement('video');
-                videoElement.src = selectedSource;
-                videoElement.controls = true;
-                videoElement.autoplay = true;
-                document.body.innerHTML = ''; // Clear the page
-                document.body.appendChild(videoElement); // Display the video
-
-                videoElement.onerror = () => {
-                    alert("Error loading video. Trying next source...");
-                    const nextSource = channel.sources[1]; // As an example, try the next source
-                    if (nextSource) {
-                        videoElement.src = nextSource;
-                    } else {
-                        alert("No more sources available.");
-                    }
-                };
+            let channels = [];
+            if (category === 'favorites') {
+                channels = channelsData.TvChannels.concat(channelsData.RadioChannels)
+                    .filter(ch => favorites.includes(ch.channelID));
             } else {
-                alert('No available streams for this channel.');
+                channels = channelsData[category === 'tv' ? 'TvChannels' : 'RadioChannels'];
+            }
+
+            channels.forEach(channel => {
+                const channelDiv = document.createElement('div');
+                channelDiv.className = 'channel';
+                channelDiv.innerHTML = `
+                    <img src="Live-iL-main/images/${channel.image}" alt="${channel.nameID}">
+                    <div class="channel-info">
+                        <h3>${channel.nameID}</h3>
+                    </div>
+                    <div class="actions">
+                        <button onclick="playChannel('${channel.channelID}')">Watch</button>
+                        <button onclick="manageSources('${channel.channelID}')">Manage Sources</button>
+                        <button onclick="toggleFavorite('${channel.channelID}')">${favorites.includes(channel.channelID) ? 'Unfavorite' : 'Favorite'}</button>
+                    </div>
+                `;
+                channelList.appendChild(channelDiv);
+            });
+
+            channelList.style.display = 'block';
+        }
+
+        function playChannel(channelID) {
+            const channel = channelsData.TvChannels.concat(channelsData.RadioChannels).find(ch => ch.channelID === channelID);
+            if (channel && channel.sources.length > 0) {
+                const videoContainer = document.createElement('div');
+                videoContainer.innerHTML = `
+                    <video controls autoplay>
+                        <source src="${channel.sources[0]}" type="application/vnd.apple.mpegurl">
+                        Your browser does not support the video tag.
+                    </video>
+                `;
+                document.body.innerHTML = ''; 
+                document.body.appendChild(videoContainer);
+            } else {
+                alert('No available sources for this channel.');
             }
         }
 
@@ -145,34 +155,35 @@
             const channel = channelsData.TvChannels.concat(channelsData.RadioChannels).find(ch => ch.channelID === channelID);
             if (!channel) return;
 
-            const action = prompt("Choose action: 1) Add source 2) Remove source");
-            if (action === '1') {
-                const newSource = prompt("Enter the new source URL:");
-                if (newSource) {
-                    channel.sources.push(newSource);
-                    alert("Source added successfully.");
-                }
-            } else if (action === '2') {
-                const sourceOptions = channel.sources.map((src, index) => `${index + 1}: ${src}`).join("\n");
-                const removeIndex = prompt("Select a source to remove:\n" + sourceOptions);
-                if (removeIndex && !isNaN(removeIndex)) {
-                    channel.sources.splice(removeIndex - 1, 1);
-                    alert("Source removed successfully.");
-                }
+            const sourcesList = document.createElement('div');
+            sourcesList.innerHTML = `
+                <h3>Manage Sources for ${channel.nameID}</h3>
+                ${channel.sources.map((src, index) => `<div>${index + 1}: ${src}</div>`).join('')}
+                <button onclick="addSource('${channel.channelID}')">Add Source</button>
+            `;
+            document.body.innerHTML = ''; 
+            document.body.appendChild(sourcesList);
+        }
+
+        function addSource(channelID) {
+            const newSource = prompt("Enter the new source URL:");
+            if (newSource) {
+                const channel = channelsData.TvChannels.concat(channelsData.RadioChannels).find(ch => ch.channelID === channelID);
+                channel.sources.push(newSource);
+                alert("Source added successfully.");
+                loadChannels();
             }
         }
 
         function toggleFavorite(channelID) {
             if (favorites.includes(channelID)) {
                 favorites = favorites.filter(id => id !== channelID);
-                alert("Channel removed from favorites.");
             } else {
                 favorites.push(channelID);
-                alert("Channel added to favorites.");
             }
+            showCategory('favorites');
         }
 
-        // Load channels when the page loads
         window.onload = loadChannels;
     </script>
 </body>

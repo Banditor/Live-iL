@@ -6,7 +6,7 @@
             "image": "kan.jpg",
             "channelID": "11",
             "module": "kan",
-            "streamUrl": "https://www.kan.org.il/live/kan"
+            "streamUrl": "https://kan11.media.kan.org.il/hls/live/2024514/2024514/master.m3u8"
         },
         {
             "name": "ch_11c",
@@ -14,55 +14,7 @@
             "image": "kan.jpg",
             "channelID": "11c",
             "module": "kan",
-            "streamUrl": "https://www.kan.org.il/live/kan"
-        },
-        {
-            "name": "ch_12",
-            "nameID": "30603",
-            "image": "keshet.jpg",
-            "channelID": "12",
-            "module": "keshet",
-            "streamUrl": "https://www.mako.co.il/live/keshet"
-        },
-        {
-            "name": "ch_12b",
-            "nameID": "30605",
-            "image": "keshet.jpg",
-            "channelID": "12b",
-            "module": "keshet",
-            "streamUrl": "https://www.mako.co.il/live/keshet"
-        },
-        {
-            "name": "ch_12c",
-            "nameID": "30626",
-            "image": "keshet.jpg",
-            "channelID": "12c",
-            "module": "keshet",
-            "streamUrl": "https://www.mako.co.il/live/keshet"
-        },
-        {
-            "name": "ch_13",
-            "nameID": "30604",
-            "image": "13.jpg",
-            "channelID": "13",
-            "module": "reshet",
-            "streamUrl": "https://13tv.co.il/live/reshet"
-        },
-        {
-            "name": "ch_13c",
-            "nameID": "30631",
-            "image": "13.jpg",
-            "channelID": "13c",
-            "module": "reshet",
-            "streamUrl": "https://13tv.co.il/live/reshet"
-        },
-        {
-            "name": "ch_14",
-            "nameID": "30606",
-            "image": "14tv.png",
-            "channelID": "14",
-            "module": "14tv",
-            "streamUrl": "https://www.now14.co.il/live/14tv"
+            "streamUrl": "https://kan11sub.media.kan.org.il/hls/live/2024678/2024678/master.m3u8"
         },
         {
             "name": "ch_23",
@@ -70,23 +22,7 @@
             "image": "23tv.jpg",
             "channelID": "23",
             "module": "kan",
-            "streamUrl": "https://www.kan.org.il/live/kan"
-        },
-        {
-            "name": "ch_24",
-            "nameID": "30608",
-            "image": "24telad.png",
-            "channelID": "24",
-            "module": "keshet",
-            "streamUrl": "https://www.mako.co.il/live/keshet"
-        },
-        {
-            "name": "ch_bb",
-            "nameID": "30621",
-            "image": "bb.jpg",
-            "channelID": "bb",
-            "module": "reshet",
-            "streamUrl": "https://13tv.co.il/live/reshet"
+            "streamUrl": "https://kan23.media.kan.org.il/hls/live/2024691/2024691/master.m3u8"
         },
         {
             "name": "ch_33",
@@ -94,15 +30,7 @@
             "image": "makan.png",
             "channelID": "33",
             "module": "kan",
-            "streamUrl": "https://www.kan.org.il/live/kan"
-        },
-        {
-            "name": "ch_walla",
-            "nameID": "30624",
-            "image": "walla.png",
-            "channelID": "live",
-            "module": "walla",
-            "streamUrl": "https://www.walla.co.il/live/walla"
+            "streamUrl": "https://makan.media.kan.org.il/hls/live/2024680/2024680/master.m3u8"
         },
         {
             "name": "rd_88",
@@ -110,7 +38,7 @@
             "image": "88.png",
             "channelID": "88",
             "module": "kan",
-            "streamUrl": "https://www.kan.org.il/live/kan"
+            "streamUrl": "https://kan88.media.kan.org.il/hls/live/2024812/2024812/playlist.m3u8"
         },
         {
             "name": "rd_bet",
@@ -118,7 +46,7 @@
             "image": "bet.png",
             "channelID": "bet",
             "module": "kan",
-            "streamUrl": "https://www.kan.org.il/live/kan"
+            "streamUrl": "https://kanbet.media.kan.org.il/hls/live/2024811/2024811/playlist.m3u8"
         },
         {
             "name": "rd_gimel",
@@ -126,7 +54,7 @@
             "image": "gimel.png",
             "channelID": "gimel",
             "module": "kan",
-            "streamUrl": "https://www.kan.org.il/live/kan"
+            "streamUrl": "https://kangimmel.media.kan.org.il/hls/live/2024813/2024813/playlist.m3u8"
         },
         {
             "name": "rd_culture",
@@ -134,7 +62,7 @@
             "image": "culture.png",
             "channelID": "culture",
             "module": "kan",
-            "streamUrl": "https://www.kan.org.il/live/kan"
+            "streamUrl": "https://kantarbut.media.kan.org.il/hls/live/2024816/2024816/playlist.m3u8"
         },
         {
             "name": "rd_music",
@@ -142,7 +70,7 @@
             "image": "music.png",
             "channelID": "music",
             "module": "kan",
-            "streamUrl": "https://www.kan.org.il/live/kan"
+            "streamUrl": "https://kankolhamusica.media.kan.org.il/hls/live/2024817/2024817/playlist.m3u8"
         },
         {
             "name": "rd_moreshet",
@@ -150,7 +78,7 @@
             "image": "moreshet.png",
             "channelID": "moreshet",
             "module": "kan",
-            "streamUrl": "https://www.kan.org.il/live/kan"
+            "streamUrl": "https://kanmoreshet.media.kan.org.il/hls/live/2024814/2024814/playlist.m3u8"
         },
         {
             "name": "rd_kankids",
@@ -158,7 +86,7 @@
             "image": "23tv.jpg",
             "channelID": "kankids",
             "module": "kan",
-            "streamUrl": "https://www.kan.org.il/live/kan"
+            "streamUrl": "https://kankids.media.kan.org.il/hls/live/2024820/2024820/playlist.m3u8"
         },
         {
             "name": "rd_reka",
@@ -166,15 +94,7 @@
             "image": "reka.png",
             "channelID": "reka",
             "module": "kan",
-            "streamUrl": "https://www.kan.org.il/live/kan"
-        },
-        {
-            "name": "rd_1064",
-            "nameID": "30737",
-            "image": "1064fm.jpg",
-            "channelID": "1064fm",
-            "module": "1064fm",
-            "streamUrl": "https://radio1064.co.il/live/1064fm"
+            "streamUrl": "https://kanreka.media.kan.org.il/hls/live/2024815/2024815/playlist.m3u8"
         },
         {
             "name": "rd_makan",
@@ -182,7 +102,7 @@
             "image": "makan.png",
             "channelID": "makan",
             "module": "kan",
-            "streamUrl": "https://www.kan.org.il/live/kan"
+            "streamUrl": "https://makanradio.media.kan.org.il/hls/live/2024818/2024818/playlist.m3u8"
         }
     ]
 }

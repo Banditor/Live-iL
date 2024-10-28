@@ -33,6 +33,14 @@
             "streamUrl": "https://makan.media.kan.org.il/hls/live/2024680/2024680/master.m3u8"
         },
         {
+            "name": "ch_sport5",
+            "nameID": "30632",
+            "image": "Sport5.png",
+            "channelID": "5studio",
+            "module": "sport5",
+            "streamUrl": "https://rgelive.akamaized.net/hls/live/2043151/radiolive/playlist.m3u8"
+        },
+        {
             "name": "rd_88",
             "nameID": "30703",
             "image": "88.png",
@@ -87,6 +95,14 @@
             "channelID": "kankids",
             "module": "kan",
             "streamUrl": "https://kankids.media.kan.org.il/hls/live/2024820/2024820/playlist.m3u8"
+        },
+        {
+            "name": "rd_sport5",
+            "nameID": "30632",
+            "image": "Sport5.png",
+            "channelID": "5live",
+            "module": "sport5",
+            "streamUrl": "https://rgelive.akamaized.net/hls/live/2043150/radio5/playlist.m3u8"
         },
         {
             "name": "rd_reka",

@@ -1,1 +1,438 @@
-
+{
+    "TvChannels": [
+        {
+            "name": "ch_11",
+            "nameID": "30602",
+            "image": "kan.jpg",
+            "channelID": "11",
+            "module": "kan"
+        },
+        {
+            "name": "ch_11b",
+            "nameID": "30633",
+            "image": "kan.jpg",
+            "channelID": "11b",
+            "module": "tv"
+        },
+        {
+            "name": "ch_11c",
+            "nameID": "30637",
+            "image": "kan.jpg",
+            "channelID": "11c",
+            "module": "kan"
+        },
+        {
+            "name": "ch_12",
+            "nameID": "30603",
+            "image": "keshet.jpg",
+            "channelID": "12",
+            "module": "keshet"
+        },
+        {
+            "name": "ch_12b",
+            "nameID": "30605",
+            "image": "keshet.jpg",
+            "channelID": "12b",
+            "module": "keshet"
+        },
+        {
+            "name": "ch_12c",
+            "nameID": "30626",
+            "image": "keshet.jpg",
+            "channelID": "12c",
+            "module": "keshet"
+        },
+        {
+            "name": "ch_13",
+            "nameID": "30604",
+            "image": "13.jpg",
+            "channelID": "13",
+            "module": "reshet"
+        },
+        {
+            "name": "ch_13b",
+            "nameID": "30634",
+            "image": "13.jpg",
+            "channelID": "13b",
+            "module": "tv"
+        },
+        {
+            "name": "ch_13c",
+            "nameID": "30631",
+            "image": "13.jpg",
+            "channelID": "13c",
+            "module": "reshet"
+        },
+        {
+            "name": "ch_14",
+            "nameID": "30606",
+            "image": "14tv.png",
+            "channelID": "14",
+            "module": "14tv"
+        },
+        {
+            "name": "ch_21",
+            "nameID": "30619",
+            "image": "21.jpg",
+            "channelID": "21",
+            "module": "21tv"
+        },
+        {
+            "name": "ch_23",
+            "nameID": "30607",
+            "image": "23tv.jpg",
+            "channelID": "23",
+            "module": "kan"
+        },
+        {
+            "name": "ch_23b",
+            "nameID": "30639",
+            "image": "23tv.jpg",
+            "channelID": "23b",
+            "module": "tv"
+        },
+        {
+            "name": "ch_24",
+            "nameID": "30608",
+            "image": "24telad.png",
+            "channelID": "24",
+            "module": "keshet"
+        },
+        {
+            "name": "ch_bb",
+            "nameID": "30621",
+            "image": "bb.jpg",
+            "channelID": "bb",
+            "module": "reshet"
+        },
+        {
+            "name": "ch_bbb",
+            "nameID": "30625",
+            "image": "bb.jpg",
+            "channelID": "bbb",
+            "module": "tv"
+        },
+        {
+            "name": "ch_33",
+            "nameID": "30609",
+            "image": "makan.png",
+            "channelID": "33",
+            "module": "kan"
+        },
+        {
+            "name": "ch_33b",
+            "nameID": "30641",
+            "image": "makan.png",
+            "channelID": "33b",
+            "module": "tv"
+        },
+        {
+            "name": "ch_66",
+            "nameID": "30610",
+            "image": "kabbalah.jpg",
+            "channelID": "17",
+            "module": "kabbalah"
+        },
+        {
+            "name": "ch_97",
+            "nameID": "30612",
+            "image": "hidabroot.jpg",
+            "channelID": "97",
+            "module": "hidabroot"
+        },
+        {
+            "name": "ch_99",
+            "nameID": "30613",
+            "image": "knesset.png",
+            "channelID": "99",
+            "module": "knesset"
+        },
+        {
+            "name": "ch_ynet",
+            "nameID": "30622",
+            "image": "ynet.jpg",
+            "channelID": "ynet",
+            "module": "tv"
+        },
+        {
+            "name": "ch_walla",
+            "nameID": "30624",
+            "image": "walla.png",
+            "channelID": "live",
+            "module": "walla"
+        },
+        {
+            "name": "ch_sport5",
+            "nameID": "30632",
+            "image": "Sport5.png",
+            "channelID": "5studio",
+            "module": "sport5"
+        },
+        {
+            "name": "ch_100",
+            "nameID": "30726",
+            "image": "100fm.jpg",
+            "channelID": "100fm",
+            "module": "tv"
+        },
+        {
+            "name": "ch_891",
+            "nameID": "30734",
+            "image": "891fm.png",
+            "channelID": "891fm",
+            "module": "tv"
+        },
+        {
+            "name": "ch_kabru",
+            "nameID": "30629",
+            "image": "kabbalah.jpg",
+            "channelID": "18",
+            "module": "kabbalah"
+        },
+        {
+            "name": "ch_musayof",
+            "nameID": "30635",
+            "image": "musayof.jpg",
+            "channelID": "musayof",
+            "module": "tv"
+        },
+        {
+            "name": "ch_i24news",
+            "nameID": "30643",
+            "image": "i24news.png",
+            "channelID": "i24news",
+            "module": "tv"
+        },
+        {
+            "name": "rd_glglz",
+            "nameID": "30702",
+            "image": "glglz.jpg",
+            "channelID": "glglz",
+            "module": "glz"
+        },
+        {
+            "name": "rd_88",
+            "nameID": "30703",
+            "image": "88.png",
+            "channelID": "88",
+            "module": "kan"
+        },
+        {
+            "name": "rd_90",
+            "nameID": "30724",
+            "image": "90fm.jpg",
+            "channelID": "90fm",
+            "module": "radio"
+        },
+        {
+            "name": "rd_91",
+            "nameID": "30736",
+            "image": "91fm.jpg",
+            "channelID": "91fm",
+            "module": "radio"
+        },
+        {
+            "name": "rd_97",
+            "nameID": "30725",
+            "image": "97fm.jpg",
+            "channelID": "97fm",
+            "module": "radio"
+        },
+        {
+            "name": "rd_99",
+            "nameID": "30704",
+            "image": "99fm.png",
+            "channelID": "99fm",
+            "module": "99fm"
+        },
+        {
+            "name": "rd_100",
+            "nameID": "30726",
+            "image": "100fm.jpg",
+            "channelID": "100fm",
+            "module": "100fm"
+        },
+        {
+            "name": "rd_101",
+            "nameID": "30727",
+            "image": "101fm.png",
+            "channelID": "101fm",
+            "module": "101fm"
+        },
+        {
+            "name": "rd_1015",
+            "nameID": "30728",
+            "image": "1015fm.jpg",
+            "channelID": "1015fm",
+            "module": "radio"
+        },
+        {
+            "name": "rd_102",
+            "nameID": "30705",
+            "image": "102fm.jpg",
+            "channelID": "102fm",
+            "module": "radio"
+        },
+        {
+            "name": "rd_102Eilat",
+            "nameID": "30729",
+            "image": "102fmEilat.jpg",
+            "channelID": "102fmEilat",
+            "module": "radio"
+        },
+        {
+            "name": "rd_103",
+            "nameID": "30706",
+            "image": "103fm.png",
+            "channelID": "103fm",
+            "module": "radio"
+        },
+        {
+            "name": "rd_1045",
+            "nameID": "30730",
+            "image": "1045fm.jpg",
+            "channelID": "1045fm",
+            "module": "radio"
+        },
+        {
+            "name": "rd_1075",
+            "nameID": "30731",
+            "image": "1075fm.jpg",
+            "channelID": "1075fm",
+            "module": "radio"
+        },
+        {
+            "name": "rd_glz",
+            "nameID": "30707",
+            "image": "glz.jpg",
+            "channelID": "glz",
+            "module": "glz"
+        },
+        {
+            "name": "rd_bet",
+            "nameID": "30708",
+            "image": "bet.png",
+            "channelID": "bet",
+            "module": "kan"
+        },
+        {
+            "name": "rd_gimel",
+            "nameID": "30709",
+            "image": "gimel.png",
+            "channelID": "gimel",
+            "module": "kan"
+        },
+        {
+            "name": "rd_culture",
+            "nameID": "30710",
+            "image": "culture.png",
+            "channelID": "culture",
+            "module": "kan"
+        },
+        {
+            "name": "rd_music",
+            "nameID": "30711",
+            "image": "music.png",
+            "channelID": "music",
+            "module": "kan"
+        },
+        {
+            "name": "rd_moreshet",
+            "nameID": "30712",
+            "image": "moreshet.png",
+            "channelID": "moreshet",
+            "module": "kan"
+        },
+        {
+            "name": "rd_kankids",
+            "nameID": "30738",
+            "image": "23tv.jpg",
+            "channelID": "kankids",
+            "module": "kan"
+        },
+        {
+            "name": "rd_sport5",
+            "nameID": "30632",
+            "image": "Sport5.png",
+            "channelID": "5live",
+            "module": "sport5"
+        },
+        {
+            "name": "rd_reka",
+            "nameID": "30713",
+            "image": "reka.png",
+            "channelID": "reka",
+            "module": "kan"
+        },
+        {
+            "name": "rd_891",
+            "nameID": "30734",
+            "image": "891fm.png",
+            "channelID": "891fm",
+            "module": "radio"
+        },
+        {
+            "name": "rd_1064",
+            "nameID": "30737",
+            "image": "1064fm.jpg",
+            "channelID": "1064fm",
+            "module": "1064fm"
+        },
+        {
+            "name": "rd_makan",
+            "nameID": "30714",
+            "image": "makan.png",
+            "channelID": "makan",
+            "module": "kan"
+        },
+        {
+            "name": "rd_mizrahit",
+            "nameID": "30733",
+            "image": "mizrahit.png",
+            "channelID": "mizrahit",
+            "module": "radio"
+        },
+        {
+            "name": "rd_kolhay",
+            "nameID": "30739",
+            "image": "kolhay.jpg",
+            "channelID": "kolhay",
+            "module": "radio"
+        },
+        {
+            "name": "rd_kolhaymusic",
+            "nameID": "30740",
+            "image": "kolhaymusic.jpg",
+            "channelID": "kolhaymusic",
+            "module": "radio"
+        },
+        {
+            "name": "rd_kolbarama",
+            "nameID": "30741",
+            "image": "kolbarama.jpg",
+            "channelID": "kolbarama",
+            "module": "radio"
+        },
+        {
+            "name": "rd_kolplay",
+            "nameID": "30742",
+            "image": "kolplay.png",
+            "channelID": "kolplay",
+            "module": "radio"
+        },
+        {
+            "name": "rd_gly",
+            "nameID": "30743",
+            "image": "gly.jpg",
+            "channelID": "gly",
+            "module": "radio"
+        },
+        {
+            "name": "rd_fm995",
+            "nameID": "30745",
+            "image": "fm95.5.png",
+            "channelID": "fm995",
+            "module": "radio"
+        }
+    ]
+}

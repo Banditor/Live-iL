@@ -6,7 +6,41 @@
             "image": "kan.jpg",
             "channelID": "11",
             "module": "kan",
-            "streamUrl": "https://kan11.media.kan.org.il/hls/live/2024514/2024514/master.m3u8"
+            "sources": [
+                "https://kan11.media.kan.org.il/hls/live/2024514/2024514/master.m3u8",
+                "https://kan11sub.media.kan.org.il/hls/live/2024678/2024678/master.m3u8",
+                "https://kan23.media.kan.org.il/hls/live/2024691/2024691/master.m3u8",
+                "https://makan.media.kan.org.il/hls/live/2024680/2024680/master.m3u8",
+                "https://kanbet.media.kan.org.il/hls/live/2024811/2024811/playlist.m3u8",
+                "https://kangimmel.media.kan.org.il/hls/live/2024813/2024813/playlist.m3u8",
+                "https://kantarbut.media.kan.org.il/hls/live/2024816/2024816/playlist.m3u8",
+                "https://kan88.media.kan.org.il/hls/live/2024812/2024812/playlist.m3u8",
+                "https://kanmoreshet.media.kan.org.il/hls/live/2024814/2024814/playlist.m3u8",
+                "https://kankolhamusica.media.kan.org.il/hls/live/2024817/2024817/playlist.m3u8",
+                "https://kankids.media.kan.org.il/hls/live/2024820/2024820/playlist.m3u8",
+                "https://kanreka.media.kan.org.il/hls/live/2024815/2024815/playlist.m3u8",
+                "https://makanradio.media.kan.org.il/hls/live/2024818/2024818/playlist.m3u8"
+            ]
+        },
+        {
+            "name": "ch_11b",
+            "nameID": "30633",
+            "image": "kan.jpg",
+            "channelID": "11b",
+            "module": "tv",
+            "sources": [
+                "https://frankly-vod.akamaized.net/channel14/transcoded/{0}/hls/master.m3u8",
+                "https://ch14-channel14-content.akamaized.net/hls/live/2104807/CH14_CHANNEL14/master.m3u8",
+                "https://cdn.cybercdn.live/Radios_100FM/Video/playlist.m3u8",
+                "http://kan11.media.kan.org.il/hls/live/2024514/2024514/source1_2.5k/chunklist.m3u8",
+                "https://d18b0e6mopany4.cloudfront.net/out/v1/08bc71cf0a0f4712b6b03c732b0e6d25/index.m3u8",
+                "https://kan23.media.kan.org.il/hls/live/2024691/2024691/source1_2.5k/chunklist.m3u8",
+                "https://makan.media.kan.org.il/hls/live/2024680/2024680/source1_2.5k/chunklist.m3u8",
+                "https://d2lckchr9cxrss.cloudfront.net/out/v1/c73af7694cce4767888c08a7534b503c/index.m3u8",
+                "http://wowza.media-line.co.il/Musayof-Live/livestream.sdp/playlist.m3u8",
+                "https://ynet-live-01.ynet-pic1.yit.co.il/ynet/live.m3u8",
+                "https://bcovlive-a.akamaihd.net/54b8e6b753e3409c91856201d1f08731/eu-central-1/5377161796001/playlist.m3u8"
+            ]
         },
         {
             "name": "ch_11c",
@@ -14,7 +48,76 @@
             "image": "kan.jpg",
             "channelID": "11c",
             "module": "kan",
-            "streamUrl": "https://kan11sub.media.kan.org.il/hls/live/2024678/2024678/master.m3u8"
+            "sources": [
+                "https://kan11.media.kan.org.il/hls/live/2024514/2024514/master.m3u8",
+                "https://kan11sub.media.kan.org.il/hls/live/2024678/2024678/master.m3u8",
+                "https://kan23.media.kan.org.il/hls/live/2024691/2024691/master.m3u8",
+                "https://makan.media.kan.org.il/hls/live/2024680/2024680/master.m3u8",
+                "https://kanbet.media.kan.org.il/hls/live/2024811/2024811/playlist.m3u8",
+                "https://kangimmel.media.kan.org.il/hls/live/2024813/2024813/playlist.m3u8",
+                "https://kantarbut.media.kan.org.il/hls/live/2024816/2024816/playlist.m3u8",
+                "https://kan88.media.kan.org.il/hls/live/2024812/2024812/playlist.m3u8",
+                "https://kanmoreshet.media.kan.org.il/hls/live/2024814/2024814/playlist.m3u8",
+                "https://kankolhamusica.media.kan.org.il/hls/live/2024817/2024817/playlist.m3u8",
+                "https://kankids.media.kan.org.il/hls/live/2024820/2024820/playlist.m3u8",
+                "https://kanreka.media.kan.org.il/hls/live/2024815/2024815/playlist.m3u8",
+                "https://makanradio.media.kan.org.il/hls/live/2024818/2024818/playlist.m3u8"
+            ]
+        },
+        {
+            "name": "ch_13",
+            "nameID": "30604",
+            "image": "13.jpg",
+            "channelID": "13",
+            "module": "reshet",
+            "sources": [
+                "https://d18b0e6mopany4.cloudfront.net/out/v1/08bc71cf0a0f4712b6b03c732b0e6d25/index.m3u8",
+                "https://d198ztbnlup2iq.cloudfront.net/out/v1/2d9050c90fb94df8b78d1d98306a1a65/index.m3u8",
+                "https://d2lckchr9cxrss.cloudfront.net/out/v1/c73af7694cce4767888c08a7534b503c/index.m3u8"
+            ]
+        },
+        {
+            "name": "ch_13b",
+            "nameID": "30634",
+            "image": "13.jpg",
+            "channelID": "13b",
+            "module": "tv",
+            "sources": [
+                "https://frankly-vod.akamaized.net/channel14/transcoded/{0}/hls/master.m3u8",
+                "https://ch14-channel14-content.akamaized.net/hls/live/2104807/CH14_CHANNEL14/master.m3u8",
+                "https://cdn.cybercdn.live/Radios_100FM/Video/playlist.m3u8",
+                "http://kan11.media.kan.org.il/hls/live/2024514/2024514/source1_2.5k/chunklist.m3u8",
+                "https://d18b0e6mopany4.cloudfront.net/out/v1/08bc71cf0a0f4712b6b03c732b0e6d25/index.m3u8",
+                "https://kan23.media.kan.org.il/hls/live/2024691/2024691/source1_2.5k/chunklist.m3u8",
+                "https://makan.media.kan.org.il/hls/live/2024680/2024680/source1_2.5k/chunklist.m3u8",
+                "https://d2lckchr9cxrss.cloudfront.net/out/v1/c73af7694cce4767888c08a7534b503c/index.m3u8",
+                "http://wowza.media-line.co.il/Musayof-Live/livestream.sdp/playlist.m3u8",
+                "https://ynet-live-01.ynet-pic1.yit.co.il/ynet/live.m3u8",
+                "https://bcovlive-a.akamaihd.net/54b8e6b753e3409c91856201d1f08731/eu-central-1/5377161796001/playlist.m3u8"
+            ]
+        },
+        {
+            "name": "ch_13c",
+            "nameID": "30631",
+            "image": "13.jpg",
+            "channelID": "13c",
+            "module": "reshet",
+            "sources": [
+                "https://d18b0e6mopany4.cloudfront.net/out/v1/08bc71cf0a0f4712b6b03c732b0e6d25/index.m3u8",
+                "https://d198ztbnlup2iq.cloudfront.net/out/v1/2d9050c90fb94df8b78d1d98306a1a65/index.m3u8",
+                "https://d2lckchr9cxrss.cloudfront.net/out/v1/c73af7694cce4767888c08a7534b503c/index.m3u8"
+            ]
+        },
+        {
+            "name": "ch_14",
+            "nameID": "30606",
+            "image": "14tv.png",
+            "channelID": "14",
+            "module": "14tv",
+            "sources": [
+                "https://frankly-vod.akamaized.net/channel14/transcoded/{0}/hls/master.m3u8",
+                "https://ch14-channel14-content.akamaized.net/hls/live/2104807/CH14_CHANNEL14/master.m3u8"
+            ]
         },
         {
             "name": "ch_23",
@@ -22,7 +125,73 @@
             "image": "23tv.jpg",
             "channelID": "23",
             "module": "kan",
-            "streamUrl": "https://kan23.media.kan.org.il/hls/live/2024691/2024691/master.m3u8"
+            "sources": [
+                "https://kan11.media.kan.org.il/hls/live/2024514/2024514/master.m3u8",
+                "https://kan11sub.media.kan.org.il/hls/live/2024678/2024678/master.m3u8",
+                "https://kan23.media.kan.org.il/hls/live/2024691/2024691/master.m3u8",
+                "https://makan.media.kan.org.il/hls/live/2024680/2024680/master.m3u8",
+                "https://kanbet.media.kan.org.il/hls/live/2024811/2024811/playlist.m3u8",
+                "https://kangimmel.media.kan.org.il/hls/live/2024813/2024813/playlist.m3u8",
+                "https://kantarbut.media.kan.org.il/hls/live/2024816/2024816/playlist.m3u8",
+                "https://kan88.media.kan.org.il/hls/live/2024812/2024812/playlist.m3u8",
+                "https://kanmoreshet.media.kan.org.il/hls/live/2024814/2024814/playlist.m3u8",
+                "https://kankolhamusica.media.kan.org.il/hls/live/2024817/2024817/playlist.m3u8",
+                "https://kankids.media.kan.org.il/hls/live/2024820/2024820/playlist.m3u8",
+                "https://kanreka.media.kan.org.il/hls/live/2024815/2024815/playlist.m3u8",
+                "https://makanradio.media.kan.org.il/hls/live/2024818/2024818/playlist.m3u8"
+            ]
+        },
+        {
+            "name": "ch_23b",
+            "nameID": "30639",
+            "image": "23tv.jpg",
+            "channelID": "23b",
+            "module": "tv",
+            "sources": [
+                "https://frankly-vod.akamaized.net/channel14/transcoded/{0}/hls/master.m3u8",
+                "https://ch14-channel14-content.akamaized.net/hls/live/2104807/CH14_CHANNEL14/master.m3u8",
+                "https://cdn.cybercdn.live/Radios_100FM/Video/playlist.m3u8",
+                "http://kan11.media.kan.org.il/hls/live/2024514/2024514/source1_2.5k/chunklist.m3u8",
+                "https://d18b0e6mopany4.cloudfront.net/out/v1/08bc71cf0a0f4712b6b03c732b0e6d25/index.m3u8",
+                "https://kan23.media.kan.org.il/hls/live/2024691/2024691/source1_2.5k/chunklist.m3u8",
+                "https://makan.media.kan.org.il/hls/live/2024680/2024680/source1_2.5k/chunklist.m3u8",
+                "https://d2lckchr9cxrss.cloudfront.net/out/v1/c73af7694cce4767888c08a7534b503c/index.m3u8",
+                "http://wowza.media-line.co.il/Musayof-Live/livestream.sdp/playlist.m3u8",
+                "https://ynet-live-01.ynet-pic1.yit.co.il/ynet/live.m3u8",
+                "https://bcovlive-a.akamaihd.net/54b8e6b753e3409c91856201d1f08731/eu-central-1/5377161796001/playlist.m3u8"
+            ]
+        },
+        {
+            "name": "ch_bb",
+            "nameID": "30621",
+            "image": "bb.jpg",
+            "channelID": "bb",
+            "module": "reshet",
+            "sources": [
+                "https://d18b0e6mopany4.cloudfront.net/out/v1/08bc71cf0a0f4712b6b03c732b0e6d25/index.m3u8",
+                "https://d198ztbnlup2iq.cloudfront.net/out/v1/2d9050c90fb94df8b78d1d98306a1a65/index.m3u8",
+                "https://d2lckchr9cxrss.cloudfront.net/out/v1/c73af7694cce4767888c08a7534b503c/index.m3u8"
+            ]
+        },
+        {
+            "name": "ch_bbb",
+            "nameID": "30625",
+            "image": "bb.jpg",
+            "channelID": "bbb",
+            "module": "tv",
+            "sources": [
+                "https://frankly-vod.akamaized.net/channel14/transcoded/{0}/hls/master.m3u8",
+                "https://ch14-channel14-content.akamaized.net/hls/live/2104807/CH14_CHANNEL14/master.m3u8",
+                "https://cdn.cybercdn.live/Radios_100FM/Video/playlist.m3u8",
+                "http://kan11.media.kan.org.il/hls/live/2024514/2024514/source1_2.5k/chunklist.m3u8",
+                "https://d18b0e6mopany4.cloudfront.net/out/v1/08bc71cf0a0f4712b6b03c732b0e6d25/index.m3u8",
+                "https://kan23.media.kan.org.il/hls/live/2024691/2024691/source1_2.5k/chunklist.m3u8",
+                "https://makan.media.kan.org.il/hls/live/2024680/2024680/source1_2.5k/chunklist.m3u8",
+                "https://d2lckchr9cxrss.cloudfront.net/out/v1/c73af7694cce4767888c08a7534b503c/index.m3u8",
+                "http://wowza.media-line.co.il/Musayof-Live/livestream.sdp/playlist.m3u8",
+                "https://ynet-live-01.ynet-pic1.yit.co.il/ynet/live.m3u8",
+                "https://bcovlive-a.akamaihd.net/54b8e6b753e3409c91856201d1f08731/eu-central-1/5377161796001/playlist.m3u8"
+            ]
         },
         {
             "name": "ch_33",
@@ -30,7 +199,81 @@
             "image": "makan.png",
             "channelID": "33",
             "module": "kan",
-            "streamUrl": "https://makan.media.kan.org.il/hls/live/2024680/2024680/master.m3u8"
+            "sources": [
+                "https://kan11.media.kan.org.il/hls/live/2024514/2024514/master.m3u8",
+                "https://kan11sub.media.kan.org.il/hls/live/2024678/2024678/master.m3u8",
+                "https://kan23.media.kan.org.il/hls/live/2024691/2024691/master.m3u8",
+                "https://makan.media.kan.org.il/hls/live/2024680/2024680/master.m3u8",
+                "https://kanbet.media.kan.org.il/hls/live/2024811/2024811/playlist.m3u8",
+                "https://kangimmel.media.kan.org.il/hls/live/2024813/2024813/playlist.m3u8",
+                "https://kantarbut.media.kan.org.il/hls/live/2024816/2024816/playlist.m3u8",
+                "https://kan88.media.kan.org.il/hls/live/2024812/2024812/playlist.m3u8",
+                "https://kanmoreshet.media.kan.org.il/hls/live/2024814/2024814/playlist.m3u8",
+                "https://kankolhamusica.media.kan.org.il/hls/live/2024817/2024817/playlist.m3u8",
+                "https://kankids.media.kan.org.il/hls/live/2024820/2024820/playlist.m3u8",
+                "https://kanreka.media.kan.org.il/hls/live/2024815/2024815/playlist.m3u8",
+                "https://makanradio.media.kan.org.il/hls/live/2024818/2024818/playlist.m3u8"
+            ]
+        },
+        {
+            "name": "ch_33b",
+            "nameID": "30641",
+            "image": "makan.png",
+            "channelID": "33b",
+            "module": "tv",
+            "sources": [
+                "https://frankly-vod.akamaized.net/channel14/transcoded/{0}/hls/master.m3u8",
+                "https://ch14-channel14-content.akamaized.net/hls/live/2104807/CH14_CHANNEL14/master.m3u8",
+                "https://cdn.cybercdn.live/Radios_100FM/Video/playlist.m3u8",
+                "http://kan11.media.kan.org.il/hls/live/2024514/2024514/source1_2.5k/chunklist.m3u8",
+                "https://d18b0e6mopany4.cloudfront.net/out/v1/08bc71cf0a0f4712b6b03c732b0e6d25/index.m3u8",
+                "https://kan23.media.kan.org.il/hls/live/2024691/2024691/source1_2.5k/chunklist.m3u8",
+                "https://makan.media.kan.org.il/hls/live/2024680/2024680/source1_2.5k/chunklist.m3u8",
+                "https://d2lckchr9cxrss.cloudfront.net/out/v1/c73af7694cce4767888c08a7534b503c/index.m3u8",
+                "http://wowza.media-line.co.il/Musayof-Live/livestream.sdp/playlist.m3u8",
+                "https://ynet-live-01.ynet-pic1.yit.co.il/ynet/live.m3u8",
+                "https://bcovlive-a.akamaihd.net/54b8e6b753e3409c91856201d1f08731/eu-central-1/5377161796001/playlist.m3u8"
+            ]
+        },
+        {
+            "name": "ch_99",
+            "nameID": "30613",
+            "image": "knesset.png",
+            "channelID": "99",
+            "module": "knesset",
+            "sources": [
+                "https://contact.gostreaming.tv/Knesset/myStream/playlist.m3u8"
+            ]
+        },
+        {
+            "name": "ch_ynet",
+            "nameID": "30622",
+            "image": "ynet.jpg",
+            "channelID": "ynet",
+            "module": "tv",
+            "sources": [
+                "https://frankly-vod.akamaized.net/channel14/transcoded/{0}/hls/master.m3u8",
+                "https://ch14-channel14-content.akamaized.net/hls/live/2104807/CH14_CHANNEL14/master.m3u8",
+                "https://cdn.cybercdn.live/Radios_100FM/Video/playlist.m3u8",
+                "http://kan11.media.kan.org.il/hls/live/2024514/2024514/source1_2.5k/chunklist.m3u8",
+                "https://d18b0e6mopany4.cloudfront.net/out/v1/08bc71cf0a0f4712b6b03c732b0e6d25/index.m3u8",
+                "https://kan23.media.kan.org.il/hls/live/2024691/2024691/source1_2.5k/chunklist.m3u8",
+                "https://makan.media.kan.org.il/hls/live/2024680/2024680/source1_2.5k/chunklist.m3u8",
+                "https://d2lckchr9cxrss.cloudfront.net/out/v1/c73af7694cce4767888c08a7534b503c/index.m3u8",
+                "http://wowza.media-line.co.il/Musayof-Live/livestream.sdp/playlist.m3u8",
+                "https://ynet-live-01.ynet-pic1.yit.co.il/ynet/live.m3u8",
+                "https://bcovlive-a.akamaihd.net/54b8e6b753e3409c91856201d1f08731/eu-central-1/5377161796001/playlist.m3u8"
+            ]
+        },
+        {
+            "name": "ch_walla",
+            "nameID": "30624",
+            "image": "walla.png",
+            "channelID": "live",
+            "module": "walla",
+            "sources": [
+                "https://amg01742-walla-wallanews-ono-btlna.amagi.tv/playlist/amg01742-walla-wallanews-ono/playlist.m3u8"
+            ]
         },
         {
             "name": "ch_sport5",
@@ -38,7 +281,91 @@
             "image": "Sport5.png",
             "channelID": "5studio",
             "module": "sport5",
-            "streamUrl": "https://rgelive.akamaized.net/hls/live/2043151/radiolive/playlist.m3u8"
+            "sources": [
+                "https://sport5-vh.akamaihd.net/i/{0}video{1}.csmil/master.m3u8",
+                "https://rgelive.akamaized.net/hls/live/2043150/radio5/playlist.m3u8",
+                "https://rgelive.akamaized.net/hls/live/2043151/radiolive/playlist.m3u8"
+            ]
+        },
+        {
+            "name": "ch_100",
+            "nameID": "30726",
+            "image": "100fm.jpg",
+            "channelID": "100fm",
+            "module": "tv",
+            "sources": [
+                "https://frankly-vod.akamaized.net/channel14/transcoded/{0}/hls/master.m3u8",
+                "https://ch14-channel14-content.akamaized.net/hls/live/2104807/CH14_CHANNEL14/master.m3u8",
+                "https://cdn.cybercdn.live/Radios_100FM/Video/playlist.m3u8",
+                "http://kan11.media.kan.org.il/hls/live/2024514/2024514/source1_2.5k/chunklist.m3u8",
+                "https://d18b0e6mopany4.cloudfront.net/out/v1/08bc71cf0a0f4712b6b03c732b0e6d25/index.m3u8",
+                "https://kan23.media.kan.org.il/hls/live/2024691/2024691/source1_2.5k/chunklist.m3u8",
+                "https://makan.media.kan.org.il/hls/live/2024680/2024680/source1_2.5k/chunklist.m3u8",
+                "https://d2lckchr9cxrss.cloudfront.net/out/v1/c73af7694cce4767888c08a7534b503c/index.m3u8",
+                "http://wowza.media-line.co.il/Musayof-Live/livestream.sdp/playlist.m3u8",
+                "https://ynet-live-01.ynet-pic1.yit.co.il/ynet/live.m3u8",
+                "https://bcovlive-a.akamaihd.net/54b8e6b753e3409c91856201d1f08731/eu-central-1/5377161796001/playlist.m3u8"
+            ]
+        },
+        {
+            "name": "ch_891",
+            "nameID": "30734",
+            "image": "891fm.png",
+            "channelID": "891fm",
+            "module": "tv",
+            "sources": [
+                "https://frankly-vod.akamaized.net/channel14/transcoded/{0}/hls/master.m3u8",
+                "https://ch14-channel14-content.akamaized.net/hls/live/2104807/CH14_CHANNEL14/master.m3u8",
+                "https://cdn.cybercdn.live/Radios_100FM/Video/playlist.m3u8",
+                "http://kan11.media.kan.org.il/hls/live/2024514/2024514/source1_2.5k/chunklist.m3u8",
+                "https://d18b0e6mopany4.cloudfront.net/out/v1/08bc71cf0a0f4712b6b03c732b0e6d25/index.m3u8",
+                "https://kan23.media.kan.org.il/hls/live/2024691/2024691/source1_2.5k/chunklist.m3u8",
+                "https://makan.media.kan.org.il/hls/live/2024680/2024680/source1_2.5k/chunklist.m3u8",
+                "https://d2lckchr9cxrss.cloudfront.net/out/v1/c73af7694cce4767888c08a7534b503c/index.m3u8",
+                "http://wowza.media-line.co.il/Musayof-Live/livestream.sdp/playlist.m3u8",
+                "https://ynet-live-01.ynet-pic1.yit.co.il/ynet/live.m3u8",
+                "https://bcovlive-a.akamaihd.net/54b8e6b753e3409c91856201d1f08731/eu-central-1/5377161796001/playlist.m3u8"
+            ]
+        },
+        {
+            "name": "ch_musayof",
+            "nameID": "30635",
+            "image": "musayof.jpg",
+            "channelID": "musayof",
+            "module": "tv",
+            "sources": [
+                "https://frankly-vod.akamaized.net/channel14/transcoded/{0}/hls/master.m3u8",
+                "https://ch14-channel14-content.akamaized.net/hls/live/2104807/CH14_CHANNEL14/master.m3u8",
+                "https://cdn.cybercdn.live/Radios_100FM/Video/playlist.m3u8",
+                "http://kan11.media.kan.org.il/hls/live/2024514/2024514/source1_2.5k/chunklist.m3u8",
+                "https://d18b0e6mopany4.cloudfront.net/out/v1/08bc71cf0a0f4712b6b03c732b0e6d25/index.m3u8",
+                "https://kan23.media.kan.org.il/hls/live/2024691/2024691/source1_2.5k/chunklist.m3u8",
+                "https://makan.media.kan.org.il/hls/live/2024680/2024680/source1_2.5k/chunklist.m3u8",
+                "https://d2lckchr9cxrss.cloudfront.net/out/v1/c73af7694cce4767888c08a7534b503c/index.m3u8",
+                "http://wowza.media-line.co.il/Musayof-Live/livestream.sdp/playlist.m3u8",
+                "https://ynet-live-01.ynet-pic1.yit.co.il/ynet/live.m3u8",
+                "https://bcovlive-a.akamaihd.net/54b8e6b753e3409c91856201d1f08731/eu-central-1/5377161796001/playlist.m3u8"
+            ]
+        },
+        {
+            "name": "ch_i24news",
+            "nameID": "30643",
+            "image": "i24news.png",
+            "channelID": "i24news",
+            "module": "tv",
+            "sources": [
+                "https://frankly-vod.akamaized.net/channel14/transcoded/{0}/hls/master.m3u8",
+                "https://ch14-channel14-content.akamaized.net/hls/live/2104807/CH14_CHANNEL14/master.m3u8",
+                "https://cdn.cybercdn.live/Radios_100FM/Video/playlist.m3u8",
+                "http://kan11.media.kan.org.il/hls/live/2024514/2024514/source1_2.5k/chunklist.m3u8",
+                "https://d18b0e6mopany4.cloudfront.net/out/v1/08bc71cf0a0f4712b6b03c732b0e6d25/index.m3u8",
+                "https://kan23.media.kan.org.il/hls/live/2024691/2024691/source1_2.5k/chunklist.m3u8",
+                "https://makan.media.kan.org.il/hls/live/2024680/2024680/source1_2.5k/chunklist.m3u8",
+                "https://d2lckchr9cxrss.cloudfront.net/out/v1/c73af7694cce4767888c08a7534b503c/index.m3u8",
+                "http://wowza.media-line.co.il/Musayof-Live/livestream.sdp/playlist.m3u8",
+                "https://ynet-live-01.ynet-pic1.yit.co.il/ynet/live.m3u8",
+                "https://bcovlive-a.akamaihd.net/54b8e6b753e3409c91856201d1f08731/eu-central-1/5377161796001/playlist.m3u8"
+            ]
         },
         {
             "name": "rd_88",
@@ -46,7 +373,21 @@
             "image": "88.png",
             "channelID": "88",
             "module": "kan",
-            "streamUrl": "https://kan88.media.kan.org.il/hls/live/2024812/2024812/playlist.m3u8"
+            "sources": [
+                "https://kan11.media.kan.org.il/hls/live/2024514/2024514/master.m3u8",
+                "https://kan11sub.media.kan.org.il/hls/live/2024678/2024678/master.m3u8",
+                "https://kan23.media.kan.org.il/hls/live/2024691/2024691/master.m3u8",
+                "https://makan.media.kan.org.il/hls/live/2024680/2024680/master.m3u8",
+                "https://kanbet.media.kan.org.il/hls/live/2024811/2024811/playlist.m3u8",
+                "https://kangimmel.media.kan.org.il/hls/live/2024813/2024813/playlist.m3u8",
+                "https://kantarbut.media.kan.org.il/hls/live/2024816/2024816/playlist.m3u8",
+                "https://kan88.media.kan.org.il/hls/live/2024812/2024812/playlist.m3u8",
+                "https://kanmoreshet.media.kan.org.il/hls/live/2024814/2024814/playlist.m3u8",
+                "https://kankolhamusica.media.kan.org.il/hls/live/2024817/2024817/playlist.m3u8",
+                "https://kankids.media.kan.org.il/hls/live/2024820/2024820/playlist.m3u8",
+                "https://kanreka.media.kan.org.il/hls/live/2024815/2024815/playlist.m3u8",
+                "https://makanradio.media.kan.org.il/hls/live/2024818/2024818/playlist.m3u8"
+            ]
         },
         {
             "name": "rd_bet",
@@ -54,7 +395,21 @@
             "image": "bet.png",
             "channelID": "bet",
             "module": "kan",
-            "streamUrl": "https://kanbet.media.kan.org.il/hls/live/2024811/2024811/playlist.m3u8"
+            "sources": [
+                "https://kan11.media.kan.org.il/hls/live/2024514/2024514/master.m3u8",
+                "https://kan11sub.media.kan.org.il/hls/live/2024678/2024678/master.m3u8",
+                "https://kan23.media.kan.org.il/hls/live/2024691/2024691/master.m3u8",
+                "https://makan.media.kan.org.il/hls/live/2024680/2024680/master.m3u8",
+                "https://kanbet.media.kan.org.il/hls/live/2024811/2024811/playlist.m3u8",
+                "https://kangimmel.media.kan.org.il/hls/live/2024813/2024813/playlist.m3u8",
+                "https://kantarbut.media.kan.org.il/hls/live/2024816/2024816/playlist.m3u8",
+                "https://kan88.media.kan.org.il/hls/live/2024812/2024812/playlist.m3u8",
+                "https://kanmoreshet.media.kan.org.il/hls/live/2024814/2024814/playlist.m3u8",
+                "https://kankolhamusica.media.kan.org.il/hls/live/2024817/2024817/playlist.m3u8",
+                "https://kankids.media.kan.org.il/hls/live/2024820/2024820/playlist.m3u8",
+                "https://kanreka.media.kan.org.il/hls/live/2024815/2024815/playlist.m3u8",
+                "https://makanradio.media.kan.org.il/hls/live/2024818/2024818/playlist.m3u8"
+            ]
         },
         {
             "name": "rd_gimel",
@@ -62,7 +417,21 @@
             "image": "gimel.png",
             "channelID": "gimel",
             "module": "kan",
-            "streamUrl": "https://kangimmel.media.kan.org.il/hls/live/2024813/2024813/playlist.m3u8"
+            "sources": [
+                "https://kan11.media.kan.org.il/hls/live/2024514/2024514/master.m3u8",
+                "https://kan11sub.media.kan.org.il/hls/live/2024678/2024678/master.m3u8",
+                "https://kan23.media.kan.org.il/hls/live/2024691/2024691/master.m3u8",
+                "https://makan.media.kan.org.il/hls/live/2024680/2024680/master.m3u8",
+                "https://kanbet.media.kan.org.il/hls/live/2024811/2024811/playlist.m3u8",
+                "https://kangimmel.media.kan.org.il/hls/live/2024813/2024813/playlist.m3u8",
+                "https://kantarbut.media.kan.org.il/hls/live/2024816/2024816/playlist.m3u8",
+                "https://kan88.media.kan.org.il/hls/live/2024812/2024812/playlist.m3u8",
+                "https://kanmoreshet.media.kan.org.il/hls/live/2024814/2024814/playlist.m3u8",
+                "https://kankolhamusica.media.kan.org.il/hls/live/2024817/2024817/playlist.m3u8",
+                "https://kankids.media.kan.org.il/hls/live/2024820/2024820/playlist.m3u8",
+                "https://kanreka.media.kan.org.il/hls/live/2024815/2024815/playlist.m3u8",
+                "https://makanradio.media.kan.org.il/hls/live/2024818/2024818/playlist.m3u8"
+            ]
         },
         {
             "name": "rd_culture",
@@ -70,7 +439,21 @@
             "image": "culture.png",
             "channelID": "culture",
             "module": "kan",
-            "streamUrl": "https://kantarbut.media.kan.org.il/hls/live/2024816/2024816/playlist.m3u8"
+            "sources": [
+                "https://kan11.media.kan.org.il/hls/live/2024514/2024514/master.m3u8",
+                "https://kan11sub.media.kan.org.il/hls/live/2024678/2024678/master.m3u8",
+                "https://kan23.media.kan.org.il/hls/live/2024691/2024691/master.m3u8",
+                "https://makan.media.kan.org.il/hls/live/2024680/2024680/master.m3u8",
+                "https://kanbet.media.kan.org.il/hls/live/2024811/2024811/playlist.m3u8",
+                "https://kangimmel.media.kan.org.il/hls/live/2024813/2024813/playlist.m3u8",
+                "https://kantarbut.media.kan.org.il/hls/live/2024816/2024816/playlist.m3u8",
+                "https://kan88.media.kan.org.il/hls/live/2024812/2024812/playlist.m3u8",
+                "https://kanmoreshet.media.kan.org.il/hls/live/2024814/2024814/playlist.m3u8",
+                "https://kankolhamusica.media.kan.org.il/hls/live/2024817/2024817/playlist.m3u8",
+                "https://kankids.media.kan.org.il/hls/live/2024820/2024820/playlist.m3u8",
+                "https://kanreka.media.kan.org.il/hls/live/2024815/2024815/playlist.m3u8",
+                "https://makanradio.media.kan.org.il/hls/live/2024818/2024818/playlist.m3u8"
+            ]
         },
         {
             "name": "rd_music",
@@ -78,7 +461,21 @@
             "image": "music.png",
             "channelID": "music",
             "module": "kan",
-            "streamUrl": "https://kankolhamusica.media.kan.org.il/hls/live/2024817/2024817/playlist.m3u8"
+            "sources": [
+                "https://kan11.media.kan.org.il/hls/live/2024514/2024514/master.m3u8",
+                "https://kan11sub.media.kan.org.il/hls/live/2024678/2024678/master.m3u8",
+                "https://kan23.media.kan.org.il/hls/live/2024691/2024691/master.m3u8",
+                "https://makan.media.kan.org.il/hls/live/2024680/2024680/master.m3u8",
+                "https://kanbet.media.kan.org.il/hls/live/2024811/2024811/playlist.m3u8",
+                "https://kangimmel.media.kan.org.il/hls/live/2024813/2024813/playlist.m3u8",
+                "https://kantarbut.media.kan.org.il/hls/live/2024816/2024816/playlist.m3u8",
+                "https://kan88.media.kan.org.il/hls/live/2024812/2024812/playlist.m3u8",
+                "https://kanmoreshet.media.kan.org.il/hls/live/2024814/2024814/playlist.m3u8",
+                "https://kankolhamusica.media.kan.org.il/hls/live/2024817/2024817/playlist.m3u8",
+                "https://kankids.media.kan.org.il/hls/live/2024820/2024820/playlist.m3u8",
+                "https://kanreka.media.kan.org.il/hls/live/2024815/2024815/playlist.m3u8",
+                "https://makanradio.media.kan.org.il/hls/live/2024818/2024818/playlist.m3u8"
+            ]
         },
         {
             "name": "rd_moreshet",
@@ -86,7 +483,21 @@
             "image": "moreshet.png",
             "channelID": "moreshet",
             "module": "kan",
-            "streamUrl": "https://kanmoreshet.media.kan.org.il/hls/live/2024814/2024814/playlist.m3u8"
+            "sources": [
+                "https://kan11.media.kan.org.il/hls/live/2024514/2024514/master.m3u8",
+                "https://kan11sub.media.kan.org.il/hls/live/2024678/2024678/master.m3u8",
+                "https://kan23.media.kan.org.il/hls/live/2024691/2024691/master.m3u8",
+                "https://makan.media.kan.org.il/hls/live/2024680/2024680/master.m3u8",
+                "https://kanbet.media.kan.org.il/hls/live/2024811/2024811/playlist.m3u8",
+                "https://kangimmel.media.kan.org.il/hls/live/2024813/2024813/playlist.m3u8",
+                "https://kantarbut.media.kan.org.il/hls/live/2024816/2024816/playlist.m3u8",
+                "https://kan88.media.kan.org.il/hls/live/2024812/2024812/playlist.m3u8",
+                "https://kanmoreshet.media.kan.org.il/hls/live/2024814/2024814/playlist.m3u8",
+                "https://kankolhamusica.media.kan.org.il/hls/live/2024817/2024817/playlist.m3u8",
+                "https://kankids.media.kan.org.il/hls/live/2024820/2024820/playlist.m3u8",
+                "https://kanreka.media.kan.org.il/hls/live/2024815/2024815/playlist.m3u8",
+                "https://makanradio.media.kan.org.il/hls/live/2024818/2024818/playlist.m3u8"
+            ]
         },
         {
             "name": "rd_kankids",
@@ -94,7 +505,21 @@
             "image": "23tv.jpg",
             "channelID": "kankids",
             "module": "kan",
-            "streamUrl": "https://kankids.media.kan.org.il/hls/live/2024820/2024820/playlist.m3u8"
+            "sources": [
+                "https://kan11.media.kan.org.il/hls/live/2024514/2024514/master.m3u8",
+                "https://kan11sub.media.kan.org.il/hls/live/2024678/2024678/master.m3u8",
+                "https://kan23.media.kan.org.il/hls/live/2024691/2024691/master.m3u8",
+                "https://makan.media.kan.org.il/hls/live/2024680/2024680/master.m3u8",
+                "https://kanbet.media.kan.org.il/hls/live/2024811/2024811/playlist.m3u8",
+                "https://kangimmel.media.kan.org.il/hls/live/2024813/2024813/playlist.m3u8",
+                "https://kantarbut.media.kan.org.il/hls/live/2024816/2024816/playlist.m3u8",
+                "https://kan88.media.kan.org.il/hls/live/2024812/2024812/playlist.m3u8",
+                "https://kanmoreshet.media.kan.org.il/hls/live/2024814/2024814/playlist.m3u8",
+                "https://kankolhamusica.media.kan.org.il/hls/live/2024817/2024817/playlist.m3u8",
+                "https://kankids.media.kan.org.il/hls/live/2024820/2024820/playlist.m3u8",
+                "https://kanreka.media.kan.org.il/hls/live/2024815/2024815/playlist.m3u8",
+                "https://makanradio.media.kan.org.il/hls/live/2024818/2024818/playlist.m3u8"
+            ]
         },
         {
             "name": "rd_sport5",
@@ -102,7 +527,11 @@
             "image": "Sport5.png",
             "channelID": "5live",
             "module": "sport5",
-            "streamUrl": "https://rgelive.akamaized.net/hls/live/2043150/radio5/playlist.m3u8"
+            "sources": [
+                "https://sport5-vh.akamaihd.net/i/{0}video{1}.csmil/master.m3u8",
+                "https://rgelive.akamaized.net/hls/live/2043150/radio5/playlist.m3u8",
+                "https://rgelive.akamaized.net/hls/live/2043151/radiolive/playlist.m3u8"
+            ]
         },
         {
             "name": "rd_reka",
@@ -110,7 +539,31 @@
             "image": "reka.png",
             "channelID": "reka",
             "module": "kan",
-            "streamUrl": "https://kanreka.media.kan.org.il/hls/live/2024815/2024815/playlist.m3u8"
+            "sources": [
+                "https://kan11.media.kan.org.il/hls/live/2024514/2024514/master.m3u8",
+                "https://kan11sub.media.kan.org.il/hls/live/2024678/2024678/master.m3u8",
+                "https://kan23.media.kan.org.il/hls/live/2024691/2024691/master.m3u8",
+                "https://makan.media.kan.org.il/hls/live/2024680/2024680/master.m3u8",
+                "https://kanbet.media.kan.org.il/hls/live/2024811/2024811/playlist.m3u8",
+                "https://kangimmel.media.kan.org.il/hls/live/2024813/2024813/playlist.m3u8",
+                "https://kantarbut.media.kan.org.il/hls/live/2024816/2024816/playlist.m3u8",
+                "https://kan88.media.kan.org.il/hls/live/2024812/2024812/playlist.m3u8",
+                "https://kanmoreshet.media.kan.org.il/hls/live/2024814/2024814/playlist.m3u8",
+                "https://kankolhamusica.media.kan.org.il/hls/live/2024817/2024817/playlist.m3u8",
+                "https://kankids.media.kan.org.il/hls/live/2024820/2024820/playlist.m3u8",
+                "https://kanreka.media.kan.org.il/hls/live/2024815/2024815/playlist.m3u8",
+                "https://makanradio.media.kan.org.il/hls/live/2024818/2024818/playlist.m3u8"
+            ]
+        },
+        {
+            "name": "rd_1064",
+            "nameID": "30737",
+            "image": "1064fm.jpg",
+            "channelID": "1064fm",
+            "module": "1064fm",
+            "sources": [
+                "https://cdna.streamgates.net/TheBest/live/playlist.m3u8"
+            ]
         },
         {
             "name": "rd_makan",
@@ -118,7 +571,21 @@
             "image": "makan.png",
             "channelID": "makan",
             "module": "kan",
-            "streamUrl": "https://makanradio.media.kan.org.il/hls/live/2024818/2024818/playlist.m3u8"
+            "sources": [
+                "https://kan11.media.kan.org.il/hls/live/2024514/2024514/master.m3u8",
+                "https://kan11sub.media.kan.org.il/hls/live/2024678/2024678/master.m3u8",
+                "https://kan23.media.kan.org.il/hls/live/2024691/2024691/master.m3u8",
+                "https://makan.media.kan.org.il/hls/live/2024680/2024680/master.m3u8",
+                "https://kanbet.media.kan.org.il/hls/live/2024811/2024811/playlist.m3u8",
+                "https://kangimmel.media.kan.org.il/hls/live/2024813/2024813/playlist.m3u8",
+                "https://kantarbut.media.kan.org.il/hls/live/2024816/2024816/playlist.m3u8",
+                "https://kan88.media.kan.org.il/hls/live/2024812/2024812/playlist.m3u8",
+                "https://kanmoreshet.media.kan.org.il/hls/live/2024814/2024814/playlist.m3u8",
+                "https://kankolhamusica.media.kan.org.il/hls/live/2024817/2024817/playlist.m3u8",
+                "https://kankids.media.kan.org.il/hls/live/2024820/2024820/playlist.m3u8",
+                "https://kanreka.media.kan.org.il/hls/live/2024815/2024815/playlist.m3u8",
+                "https://makanradio.media.kan.org.il/hls/live/2024818/2024818/playlist.m3u8"
+            ]
         }
     ]
 }

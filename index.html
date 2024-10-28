@@ -97,10 +97,14 @@
             fetch('data/full_channels_data_v3.json')
                 .then(response => response.json())
                 .then(data => {
+                    console.log('Loaded JSON data:', data); // Debugging output
                     channelsData = data;
                     showCategory('tv');
                 })
-                .catch(error => console.error('Error loading channels:', error));
+                .catch(error => {
+                    console.error('Error loading channels:', error);
+                    alert('Failed to load channel data. Please check the console for more details.');
+                });
         }
 
         function refreshChannels() {

@@ -84,7 +84,7 @@
                         const channelDiv = document.createElement('div');
                         channelDiv.className = 'channel';
                         channelDiv.innerHTML = `
-                            <img src="resources/images/${channel.image}" alt="${channel.nameID}">
+                            <img src="images/${channel.image}" alt="${channel.nameID}">
                             <div class="channel-info">
                                 <h3>${channel.nameID}</h3>
                             </div>
@@ -107,7 +107,21 @@
 
         function watchChannel(channelID) {
             // Placeholder for watch channel functionality
-            alert(`Watching channel: ${channelID} (This will be replaced with actual functionality)`);
+            
+                 // Assuming each channel has a stream URL stored in the JSON (mock implementation)
+                 const channel = data.TvChannels.concat(data.RadioChannels).find(ch => ch.channelID === channelID);
+                 if (channel && channel.sources && channel.sources.length > 0) {
+                     const videoUrl = channel.sources[0]; // Use the first available source for now
+                     const videoElement = document.createElement('video');
+                     videoElement.src = videoUrl;
+                     videoElement.controls = true;
+                     videoElement.autoplay = true;
+                     document.body.innerHTML = ''; // Clear the page
+                     document.body.appendChild(videoElement); // Display the video
+                 } else {
+                     alert('No available streams for this channel.');
+                 }
+                 
         }
 
         // Load channels when the page loads

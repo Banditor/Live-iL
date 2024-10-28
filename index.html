@@ -93,7 +93,7 @@
         let favorites = []; 
 
         function loadChannels() {
-            fetch('data/channels_data.json')
+            fetch('data/full_channels_data_v2.json')
                 .then(response => response.json())
                 .then(data => {
                     channelsData = data;
@@ -123,7 +123,7 @@
                         <h3>${channel.nameID}</h3>
                     </div>
                     <div class="actions">
-                        <button onclick="playChannel('${channel.channelID}')">Watch</button>
+                        <button onclick="playChannel('${channel.channelID}', '${channel.nameID}')">Watch</button>
                         <button onclick="manageSources('${channel.channelID}')">Manage Sources</button>
                         <button onclick="toggleFavorite('${channel.channelID}')">${favorites.includes(channel.channelID) ? 'Unfavorite' : 'Favorite'}</button>
                     </div>
@@ -134,21 +134,29 @@
             channelList.style.display = 'block';
         }
 
-        function playChannel(channelID) {
+        function playChannel(channelID, channelName) {
             const channel = channelsData.TvChannels.concat(channelsData.RadioChannels).find(ch => ch.channelID === channelID);
             if (channel && channel.sources.length > 0) {
-                const videoContainer = document.createElement('div');
-                videoContainer.innerHTML = `
-                    <video controls autoplay>
-                        <source src="${channel.sources[0]}" type="application/vnd.apple.mpegurl">
-                        Your browser does not support the video tag.
-                    </video>
+                const options = channel.sources.map((src, index) => `<option value="${src}">${index + 1}: ${src}</option>`).join('');
+                const playerContainer = document.createElement('div');
+                playerContainer.innerHTML = `
+                    <h3>${channelName}</h3>
+                    <select id="source-select">${options}</select>
+                    <button onclick="startPlayback('${channelID}')">Play</button>
+                    <video id="video-player" controls autoplay style="width: 100%; margin-top: 20px;"></video>
                 `;
                 document.body.innerHTML = ''; 
-                document.body.appendChild(videoContainer);
+                document.body.appendChild(playerContainer);
             } else {
                 alert('No available sources for this channel.');
             }
+        }
+
+        function startPlayback(channelID) {
+            const select = document.getElementById('source-select');
+            const selectedSource = select.value;
+            const videoPlayer = document.getElementById('video-player');
+            videoPlayer.src = selectedSource;
         }
 
         function manageSources(channelID) {

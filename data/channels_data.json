@@ -6,15 +6,7 @@
             "image": "kan.jpg",
             "channelID": "11",
             "module": "kan",
-            "streamUrl": "https://stream.example.com/11"
-        },
-        {
-            "name": "ch_11b",
-            "nameID": "30633",
-            "image": "kan.jpg",
-            "channelID": "11b",
-            "module": "tv",
-            "streamUrl": "https://stream.example.com/11b"
+            "streamUrl": "https://stream.example.com/kan_stream"
         },
         {
             "name": "ch_11c",
@@ -22,7 +14,7 @@
             "image": "kan.jpg",
             "channelID": "11c",
             "module": "kan",
-            "streamUrl": "https://stream.example.com/11c"
+            "streamUrl": "https://stream.example.com/kan_stream"
         },
         {
             "name": "ch_12",
@@ -30,7 +22,7 @@
             "image": "keshet.jpg",
             "channelID": "12",
             "module": "keshet",
-            "streamUrl": "https://stream.example.com/12"
+            "streamUrl": "https://stream.example.com/keshet_stream"
         },
         {
             "name": "ch_12b",
@@ -38,7 +30,7 @@
             "image": "keshet.jpg",
             "channelID": "12b",
             "module": "keshet",
-            "streamUrl": "https://stream.example.com/12b"
+            "streamUrl": "https://stream.example.com/keshet_stream"
         },
         {
             "name": "ch_12c",
@@ -46,7 +38,7 @@
             "image": "keshet.jpg",
             "channelID": "12c",
             "module": "keshet",
-            "streamUrl": "https://stream.example.com/12c"
+            "streamUrl": "https://stream.example.com/keshet_stream"
         },
         {
             "name": "ch_13",
@@ -54,15 +46,7 @@
             "image": "13.jpg",
             "channelID": "13",
             "module": "reshet",
-            "streamUrl": "https://stream.example.com/13"
-        },
-        {
-            "name": "ch_13b",
-            "nameID": "30634",
-            "image": "13.jpg",
-            "channelID": "13b",
-            "module": "tv",
-            "streamUrl": "https://stream.example.com/13b"
+            "streamUrl": "https://stream.example.com/reshet_stream"
         },
         {
             "name": "ch_13c",
@@ -70,23 +54,7 @@
             "image": "13.jpg",
             "channelID": "13c",
             "module": "reshet",
-            "streamUrl": "https://stream.example.com/13c"
-        },
-        {
-            "name": "ch_14",
-            "nameID": "30606",
-            "image": "14tv.png",
-            "channelID": "14",
-            "module": "14tv",
-            "streamUrl": "https://stream.example.com/14"
-        },
-        {
-            "name": "ch_21",
-            "nameID": "30619",
-            "image": "21.jpg",
-            "channelID": "21",
-            "module": "21tv",
-            "streamUrl": "https://stream.example.com/21"
+            "streamUrl": "https://stream.example.com/reshet_stream"
         },
         {
             "name": "ch_23",
@@ -94,15 +62,7 @@
             "image": "23tv.jpg",
             "channelID": "23",
             "module": "kan",
-            "streamUrl": "https://stream.example.com/23"
-        },
-        {
-            "name": "ch_23b",
-            "nameID": "30639",
-            "image": "23tv.jpg",
-            "channelID": "23b",
-            "module": "tv",
-            "streamUrl": "https://stream.example.com/23b"
+            "streamUrl": "https://stream.example.com/kan_stream"
         },
         {
             "name": "ch_24",
@@ -110,7 +70,7 @@
             "image": "24telad.png",
             "channelID": "24",
             "module": "keshet",
-            "streamUrl": "https://stream.example.com/24"
+            "streamUrl": "https://stream.example.com/keshet_stream"
         },
         {
             "name": "ch_bb",
@@ -118,15 +78,7 @@
             "image": "bb.jpg",
             "channelID": "bb",
             "module": "reshet",
-            "streamUrl": "https://stream.example.com/bb"
-        },
-        {
-            "name": "ch_bbb",
-            "nameID": "30625",
-            "image": "bb.jpg",
-            "channelID": "bbb",
-            "module": "tv",
-            "streamUrl": "https://stream.example.com/bbb"
+            "streamUrl": "https://stream.example.com/reshet_stream"
         },
         {
             "name": "ch_33",
@@ -134,55 +86,7 @@
             "image": "makan.png",
             "channelID": "33",
             "module": "kan",
-            "streamUrl": "https://stream.example.com/33"
-        },
-        {
-            "name": "ch_33b",
-            "nameID": "30641",
-            "image": "makan.png",
-            "channelID": "33b",
-            "module": "tv",
-            "streamUrl": "https://stream.example.com/33b"
-        },
-        {
-            "name": "ch_66",
-            "nameID": "30610",
-            "image": "kabbalah.jpg",
-            "channelID": "17",
-            "module": "kabbalah",
-            "streamUrl": "https://stream.example.com/17"
-        },
-        {
-            "name": "ch_97",
-            "nameID": "30612",
-            "image": "hidabroot.jpg",
-            "channelID": "97",
-            "module": "hidabroot",
-            "streamUrl": "https://stream.example.com/97"
-        },
-        {
-            "name": "ch_99",
-            "nameID": "30613",
-            "image": "knesset.png",
-            "channelID": "99",
-            "module": "knesset",
-            "streamUrl": "https://stream.example.com/99"
-        },
-        {
-            "name": "ch_ynet",
-            "nameID": "30622",
-            "image": "ynet.jpg",
-            "channelID": "ynet",
-            "module": "tv",
-            "streamUrl": "https://stream.example.com/ynet"
-        },
-        {
-            "name": "ch_walla",
-            "nameID": "30624",
-            "image": "walla.png",
-            "channelID": "live",
-            "module": "walla",
-            "streamUrl": "https://stream.example.com/live"
+            "streamUrl": "https://stream.example.com/kan_stream"
         },
         {
             "name": "ch_sport5",
@@ -190,55 +94,7 @@
             "image": "Sport5.png",
             "channelID": "5studio",
             "module": "sport5",
-            "streamUrl": "https://stream.example.com/5studio"
-        },
-        {
-            "name": "ch_100",
-            "nameID": "30726",
-            "image": "100fm.jpg",
-            "channelID": "100fm",
-            "module": "tv",
-            "streamUrl": "https://stream.example.com/100fm"
-        },
-        {
-            "name": "ch_891",
-            "nameID": "30734",
-            "image": "891fm.png",
-            "channelID": "891fm",
-            "module": "tv",
-            "streamUrl": "https://stream.example.com/891fm"
-        },
-        {
-            "name": "ch_kabru",
-            "nameID": "30629",
-            "image": "kabbalah.jpg",
-            "channelID": "18",
-            "module": "kabbalah",
-            "streamUrl": "https://stream.example.com/18"
-        },
-        {
-            "name": "ch_musayof",
-            "nameID": "30635",
-            "image": "musayof.jpg",
-            "channelID": "musayof",
-            "module": "tv",
-            "streamUrl": "https://stream.example.com/musayof"
-        },
-        {
-            "name": "ch_i24news",
-            "nameID": "30643",
-            "image": "i24news.png",
-            "channelID": "i24news",
-            "module": "tv",
-            "streamUrl": "https://stream.example.com/i24news"
-        },
-        {
-            "name": "rd_glglz",
-            "nameID": "30702",
-            "image": "glglz.jpg",
-            "channelID": "glglz",
-            "module": "glz",
-            "streamUrl": "https://stream.example.com/glglz"
+            "streamUrl": "https://stream.example.com/sport5_stream"
         },
         {
             "name": "rd_88",
@@ -246,111 +102,7 @@
             "image": "88.png",
             "channelID": "88",
             "module": "kan",
-            "streamUrl": "https://stream.example.com/88"
-        },
-        {
-            "name": "rd_90",
-            "nameID": "30724",
-            "image": "90fm.jpg",
-            "channelID": "90fm",
-            "module": "radio",
-            "streamUrl": "https://stream.example.com/90fm"
-        },
-        {
-            "name": "rd_91",
-            "nameID": "30736",
-            "image": "91fm.jpg",
-            "channelID": "91fm",
-            "module": "radio",
-            "streamUrl": "https://stream.example.com/91fm"
-        },
-        {
-            "name": "rd_97",
-            "nameID": "30725",
-            "image": "97fm.jpg",
-            "channelID": "97fm",
-            "module": "radio",
-            "streamUrl": "https://stream.example.com/97fm"
-        },
-        {
-            "name": "rd_99",
-            "nameID": "30704",
-            "image": "99fm.png",
-            "channelID": "99fm",
-            "module": "99fm",
-            "streamUrl": "https://stream.example.com/99fm"
-        },
-        {
-            "name": "rd_100",
-            "nameID": "30726",
-            "image": "100fm.jpg",
-            "channelID": "100fm",
-            "module": "100fm",
-            "streamUrl": "https://stream.example.com/100fm"
-        },
-        {
-            "name": "rd_101",
-            "nameID": "30727",
-            "image": "101fm.png",
-            "channelID": "101fm",
-            "module": "101fm",
-            "streamUrl": "https://stream.example.com/101fm"
-        },
-        {
-            "name": "rd_1015",
-            "nameID": "30728",
-            "image": "1015fm.jpg",
-            "channelID": "1015fm",
-            "module": "radio",
-            "streamUrl": "https://stream.example.com/1015fm"
-        },
-        {
-            "name": "rd_102",
-            "nameID": "30705",
-            "image": "102fm.jpg",
-            "channelID": "102fm",
-            "module": "radio",
-            "streamUrl": "https://stream.example.com/102fm"
-        },
-        {
-            "name": "rd_102Eilat",
-            "nameID": "30729",
-            "image": "102fmEilat.jpg",
-            "channelID": "102fmEilat",
-            "module": "radio",
-            "streamUrl": "https://stream.example.com/102fmEilat"
-        },
-        {
-            "name": "rd_103",
-            "nameID": "30706",
-            "image": "103fm.png",
-            "channelID": "103fm",
-            "module": "radio",
-            "streamUrl": "https://stream.example.com/103fm"
-        },
-        {
-            "name": "rd_1045",
-            "nameID": "30730",
-            "image": "1045fm.jpg",
-            "channelID": "1045fm",
-            "module": "radio",
-            "streamUrl": "https://stream.example.com/1045fm"
-        },
-        {
-            "name": "rd_1075",
-            "nameID": "30731",
-            "image": "1075fm.jpg",
-            "channelID": "1075fm",
-            "module": "radio",
-            "streamUrl": "https://stream.example.com/1075fm"
-        },
-        {
-            "name": "rd_glz",
-            "nameID": "30707",
-            "image": "glz.jpg",
-            "channelID": "glz",
-            "module": "glz",
-            "streamUrl": "https://stream.example.com/glz"
+            "streamUrl": "https://stream.example.com/kan_stream"
         },
         {
             "name": "rd_bet",
@@ -358,7 +110,7 @@
             "image": "bet.png",
             "channelID": "bet",
             "module": "kan",
-            "streamUrl": "https://stream.example.com/bet"
+            "streamUrl": "https://stream.example.com/kan_stream"
         },
         {
             "name": "rd_gimel",
@@ -366,7 +118,7 @@
             "image": "gimel.png",
             "channelID": "gimel",
             "module": "kan",
-            "streamUrl": "https://stream.example.com/gimel"
+            "streamUrl": "https://stream.example.com/kan_stream"
         },
         {
             "name": "rd_culture",
@@ -374,7 +126,7 @@
             "image": "culture.png",
             "channelID": "culture",
             "module": "kan",
-            "streamUrl": "https://stream.example.com/culture"
+            "streamUrl": "https://stream.example.com/kan_stream"
         },
         {
             "name": "rd_music",
@@ -382,7 +134,7 @@
             "image": "music.png",
             "channelID": "music",
             "module": "kan",
-            "streamUrl": "https://stream.example.com/music"
+            "streamUrl": "https://stream.example.com/kan_stream"
         },
         {
             "name": "rd_moreshet",
@@ -390,7 +142,7 @@
             "image": "moreshet.png",
             "channelID": "moreshet",
             "module": "kan",
-            "streamUrl": "https://stream.example.com/moreshet"
+            "streamUrl": "https://stream.example.com/kan_stream"
         },
         {
             "name": "rd_kankids",
@@ -398,7 +150,7 @@
             "image": "23tv.jpg",
             "channelID": "kankids",
             "module": "kan",
-            "streamUrl": "https://stream.example.com/kankids"
+            "streamUrl": "https://stream.example.com/kan_stream"
         },
         {
             "name": "rd_sport5",
@@ -406,7 +158,7 @@
             "image": "Sport5.png",
             "channelID": "5live",
             "module": "sport5",
-            "streamUrl": "https://stream.example.com/5live"
+            "streamUrl": "https://stream.example.com/sport5_stream"
         },
         {
             "name": "rd_reka",
@@ -414,23 +166,7 @@
             "image": "reka.png",
             "channelID": "reka",
             "module": "kan",
-            "streamUrl": "https://stream.example.com/reka"
-        },
-        {
-            "name": "rd_891",
-            "nameID": "30734",
-            "image": "891fm.png",
-            "channelID": "891fm",
-            "module": "radio",
-            "streamUrl": "https://stream.example.com/891fm"
-        },
-        {
-            "name": "rd_1064",
-            "nameID": "30737",
-            "image": "1064fm.jpg",
-            "channelID": "1064fm",
-            "module": "1064fm",
-            "streamUrl": "https://stream.example.com/1064fm"
+            "streamUrl": "https://stream.example.com/kan_stream"
         },
         {
             "name": "rd_makan",
@@ -438,63 +174,7 @@
             "image": "makan.png",
             "channelID": "makan",
             "module": "kan",
-            "streamUrl": "https://stream.example.com/makan"
-        },
-        {
-            "name": "rd_mizrahit",
-            "nameID": "30733",
-            "image": "mizrahit.png",
-            "channelID": "mizrahit",
-            "module": "radio",
-            "streamUrl": "https://stream.example.com/mizrahit"
-        },
-        {
-            "name": "rd_kolhay",
-            "nameID": "30739",
-            "image": "kolhay.jpg",
-            "channelID": "kolhay",
-            "module": "radio",
-            "streamUrl": "https://stream.example.com/kolhay"
-        },
-        {
-            "name": "rd_kolhaymusic",
-            "nameID": "30740",
-            "image": "kolhaymusic.jpg",
-            "channelID": "kolhaymusic",
-            "module": "radio",
-            "streamUrl": "https://stream.example.com/kolhaymusic"
-        },
-        {
-            "name": "rd_kolbarama",
-            "nameID": "30741",
-            "image": "kolbarama.jpg",
-            "channelID": "kolbarama",
-            "module": "radio",
-            "streamUrl": "https://stream.example.com/kolbarama"
-        },
-        {
-            "name": "rd_kolplay",
-            "nameID": "30742",
-            "image": "kolplay.png",
-            "channelID": "kolplay",
-            "module": "radio",
-            "streamUrl": "https://stream.example.com/kolplay"
-        },
-        {
-            "name": "rd_gly",
-            "nameID": "30743",
-            "image": "gly.jpg",
-            "channelID": "gly",
-            "module": "radio",
-            "streamUrl": "https://stream.example.com/gly"
-        },
-        {
-            "name": "rd_fm995",
-            "nameID": "30745",
-            "image": "fm95.5.png",
-            "channelID": "fm995",
-            "module": "radio",
-            "streamUrl": "https://stream.example.com/fm995"
+            "streamUrl": "https://stream.example.com/kan_stream"
         }
     ]
 }

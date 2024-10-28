@@ -1,1 +1,90 @@
-cler ready to write
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idan Plus Channels</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .channel-logo {
+            width: 100px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Idan Plus Channels</h1>
+    <table id="channels-table">
+        <thead>
+            <tr>
+                <th>Logo</th>
+                <th>Channel Name</th>
+                <th>Watch</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <script>
+        async function loadChannels() {
+            try {
+                // Fetch the XML/JSON file from your repository
+                const response = await fetch('URL_TO_YOUR_JSON_OR_XML_FILE');
+                const data = await response.json(); // or response.text() for XML
+                
+                // Example structure adjustment if using JSON
+                const channels = data.channels; // adjust based on the actual structure
+                
+                const tableBody = document.querySelector('#channels-table tbody');
+                
+                channels.forEach(channel => {
+                    const row = document.createElement('tr');
+                    
+                    // Logo cell
+                    const logoCell = document.createElement('td');
+                    const logoImg = document.createElement('img');
+                    logoImg.src = channel.logo; // URL to the logo
+                    logoImg.alt = `${channel.name} logo`;
+                    logoImg.classList.add('channel-logo');
+                    logoCell.appendChild(logoImg);
+                    row.appendChild(logoCell);
+                    
+                    // Channel name cell
+                    const nameCell = document.createElement('td');
+                    nameCell.textContent = channel.name;
+                    row.appendChild(nameCell);
+                    
+                    // Watch button cell
+                    const watchCell = document.createElement('td');
+                    const watchButton = document.createElement('button');
+                    watchButton.textContent = 'Watch';
+                    watchButton.onclick = () => {
+                        window.open(channel.streamUrl, '_blank'); // URL for streaming
+                    };
+                    watchCell.appendChild(watchButton);
+                    row.appendChild(watchCell);
+                    
+                    tableBody.appendChild(row);
+                });
+            } catch (error) {
+                console.error('Error loading channels:', error);
+            }
+        }
+
+        // Call the function to load channels
+        loadChannels();
+    </script>
+</body>
+</html>

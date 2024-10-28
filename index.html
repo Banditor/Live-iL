@@ -61,7 +61,7 @@
 
         function loadChannels() {
             // Fetch the JSON data (this will be replaced with actual dynamic loading in a real environment)
-            fetch('idanplus_channels.json')
+            fetch('data/channels_data.json')
                 .then(response => response.json())
                 .then(data => {
                     displayChannels(data);
